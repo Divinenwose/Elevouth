@@ -1,0 +1,134 @@
+.grow-container {
+    background: #FEF9F1F9;
+    padding: 60px 40px;
+    z-index: 999;
+    top: -0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.grow-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.grow-image-wrapper {
+    flex: 1;
+    min-width: 700px;
+    max-width: 700px;
+    border-radius: 16px;
+    margin-left: -110px;
+}
+
+.grow-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.grow-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding-left: -620px;
+}
+
+.grow-text h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    color: #606260;
+    margin-bottom: 20px;
+}
+
+.grow-text p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #151B17;
+}
+
+.hub {
+    width: 165px;
+    height: 52px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: #104911;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #FAFCFA;
+}
+
+.hub-wrapper{
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .grow-container{
+    padding: 10px;
+  }
+
+  .grow-content {
+    flex-direction: column-reverse;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .grow-text{
+    margin-left: -20px;
+  }
+
+  .grow-text h2{
+    font-size: 28px;
+    line-height: 40px;
+    white-space: nowrap;
+  }
+
+  .grow-text p{
+    font-size: 16px;
+    line-height: 100%;
+    width: 330px;
+  }
+
+  .grow-image-wrapper {
+    margin-left: 0;
+    min-width: 400px;
+    max-width: 690px;
+    margin-left: -40px;
+  }
+
+  .grow-image-wrapper img{
+    width: 430px;
+  }
+
+  .hub {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+  }
+
+  .grow-text {
+    padding-left: 0;
+    max-width: 100%;
+  }
+}

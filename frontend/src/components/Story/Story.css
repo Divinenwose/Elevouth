@@ -1,0 +1,151 @@
+.story-container {
+    background: #F6FBFC;
+    height: 1073px;
+    padding: 40px;
+}
+
+.story-content {
+    margin-top: 30px;
+   
+}
+
+.story-content h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    color: #424342;
+}
+
+.story-content p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #111511;
+    margin-top: 15px;
+    width: 520px;
+}
+
+.story-content .story-btn {
+    width: 225px;
+    height: 52px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    background: #104911;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #FAFCFA;
+}
+
+.story-btn-container {
+    margin-top: 60px;
+}
+
+.story-flex {
+    display: flex;
+    margin-top: 90px;
+}
+
+.image-wrapper {
+  width: 703px;
+  height: 639px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: block;
+  margin-left: -80px;
+}
+
+.storypic {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+.story-flex p {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #414441;
+    text-align: justify;
+    margin-top: 110px; 
+    height: 560px;
+}
+
+@media screen and (max-width: 768px) {
+  .story-container {
+    padding: 20px;
+    height: auto;
+  }
+
+  .story-content h2 {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .story-content p {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+    width: 340px;
+  }
+
+  .story-btn-container {
+        margin-top: 30px;
+        text-align: left; 
+  }
+
+    .story-content .story-btn {
+        display: block;               
+        width: 100%;                   
+        max-width: none;              
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px;
+        text-align: center;          
+        margin: 0 auto;                
+        box-sizing: border-box;
+    }
+
+
+  .story-flex {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .image-wrapper {
+    width: 454px;
+    margin-left: -60px;
+  }
+
+  .storypic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .story-flex p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: -250px;
+    height: auto;
+    text-align: left;
+  }
+}
+

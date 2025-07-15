@@ -1,0 +1,278 @@
+.testimonial-section {
+  background: #FAFCFAF9;
+  text-align: center;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+  height: 560px;
+}
+
+.testimonial-section h2 {
+  z-index: 2;
+  position: relative;
+  font-family: "Arima";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0%;
+  color: #606260;
+}
+
+.testimonial-section p {
+  color: #333;
+  z-index: 2;
+  position: relative;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+
+.sliding-handle {
+  position: absolute;
+  top: 294px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 80px;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none;
+  font-family: "Arima";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+
+.scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.Comma{
+  margin-left: -390px;
+}
+
+.testimonial-cards {
+  position: relative;
+  height: 260px;
+  margin-top: 90px;
+  z-index: 2;
+}
+
+.testimonial-card {
+  position: absolute;
+  width: 80%;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px;
+  background: #E4F2F6;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: all 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 290px;
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  background: #E4F2F6;
+  z-index: 3;
+}
+
+
+.testimonial-card.prev {
+  transform: translateX(-44%) rotateZ(7deg) scale(0.92);
+  background: #FDEFC0;
+  z-index: 1;  
+}
+
+.testimonial-card.next {
+  transform: translateX(-58%) rotateZ(-8deg) scale(0.92);
+  background: #C8EBB1;
+  z-index: 1;
+}
+
+
+.testimonial-text {
+  margin-bottom: 10px;
+  font-family: "Arima";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #111511;
+}
+
+.testimonial-name {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #424342;
+}
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  font-family: "Manrope";
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #424342;
+  display: block;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  margin-left: 30px;
+}
+
+.testimonial-handle {
+  color: #424342;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+  height: 4px;
+  width: 85%;
+  background-color: #AEE28B; 
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #215101;
+  animation: fillBar 4s linear forwards;
+  width: 0%;
+  border-radius: 0 0 10px 10px;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    height: 560px;
+    padding: 0px 20px;
+  }
+
+  .card-footer{
+    margin-top: 0;
+  }
+
+  .testimonial-section h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .testimonial-section p {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .sliding-handle{
+    top: 490px;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .Comma{
+    margin-left: -240px;
+    margin-top: 40px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .testimonial-cards{
+    height: 160px;
+    margin-top: 50px;
+  }
+
+  .testimonial-card{
+    width: 90%;
+  }
+
+  .testimonial-text{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .testimonial-name{
+    font-size: 11px;
+    line-height: 14px;
+    margin-left: -40px;
+  }
+
+  .testimonial-role{
+    font-size: 11px;
+    line-height: 14px;
+    margin-left: -10px;
+  }
+
+  .testimonial-handle{
+    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .progress-bar{
+    left: 30px;
+    bottom: 10px;
+  }
+}
+

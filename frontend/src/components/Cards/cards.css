@@ -1,0 +1,257 @@
+.cards-container{
+    background: #FAFCFAF9;
+    padding: 60px 40px;
+    padding: 40px;
+}
+
+.cards-content-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-content-container h2{
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    color: #606260;
+    width: 700px;
+}
+
+.cards-content-container p{
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #111511;
+    width: 500px;
+}
+
+.main-cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding-left: 6px; 
+  padding-right: 20px;
+}
+
+.main-cards-one,
+.main-cards-two,
+.main-cards-three {
+    grid-column: span 2;
+    width: 410px; 
+    height: 378px;
+    border-radius: 8px;
+    padding: 24px;
+    box-sizing: border-box;
+    gap: 96px;
+    opacity: 1;
+    border-width: 0.5px;
+}
+
+.main-cards-one {
+  background: #FCDC76;
+}
+
+.main-cards-two {
+  background: #C5E3EC;
+}
+
+.main-cards-three {
+  background: #E7EDE7;
+}
+
+.main-cards-four,
+.main-cards-five {
+  width: 100%; 
+  grid-column: span 3; 
+  height: 370px;
+  opacity: 1;
+  border-radius: 8px;
+  border-width: 0.5px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.main-cards-four {
+  background: #C8EBB1;
+}
+
+.main-cards-five {
+  background: #FDE3BA;
+}
+
+.main-cards-container h1{
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #414441;
+    white-space: nowrap; 
+}
+
+.main-cards-container h2{
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: #111511;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.main-cards-container .main-paragraph{
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #424342;
+    margin-top: 20px;
+    width: 390px;
+}
+
+.main-cards-container .main-paragraph-two{
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #424342;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.learn-more{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+
+}
+
+.learn-more p{
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #104911;
+}
+
+.learn-more img{
+    padding-top: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    padding: 40px 20px;
+  }
+
+  .cards-content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .cards-content-container h2 {
+    font-family: "Manrope";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    width: 380px;
+    margin-left: 40px;
+  }
+
+  .cards-content-container p {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+    margin-left: 30px;
+    width: 365px;
+  }
+
+
+  .main-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .main-cards-one,
+  .main-cards-two,
+  .main-cards-three,
+  .main-cards-four,
+  .main-cards-five {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    grid-column: span 1;
+  }
+
+  .main-cards-container h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .main-cards-container h2 {
+    font-size: 14px;
+    line-height: 22px;
+    white-space: normal;
+    margin-top: 8px;
+  }
+
+  .main-cards-container .main-paragraph,
+  .main-cards-container .main-paragraph-two {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .learn-more {
+    margin-top: 40px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .learn-more p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .learn-more img {
+    width: 14px;
+    height: 22px;
+  }
+}
+
