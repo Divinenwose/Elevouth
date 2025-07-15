@@ -16,24 +16,24 @@ import Footer from "../../components/Footer/Footer.jsx";
 
 
 const HomePage = () => {
-    return(
-       <div>
-         <Hero />
-         <Pause />
-         <Cards />
-         <Gets />
-         <Teams />
-         <Story />
-         <Submit />
-         <Grow />
-         <Candidates />
-         <Path />
-         <TestimonialSection />
-         <FAQSection />
-         <Contact />
-         <Footer />
-       </div>
-    )
+  return(
+    <div>
+      <Hero />
+      <Pause />
+      <Cards />
+      <Gets />
+      <Teams />
+      <Story />
+      <Submit />
+      <Grow />
+      <Candidates />
+      <Path />
+      <TestimonialSection />
+      <FAQSection />
+      <Contact />
+      <Footer />
+    </div>
+  )
 }
 
 export default HomePage;
