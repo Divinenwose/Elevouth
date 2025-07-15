@@ -1,5 +1,5 @@
 import React from "react";
-import './cards.css'; 
+import './Cards.css'; 
 import Arrow from "../../assets/learn-arrow.png";
 
 const Cards = () => {
