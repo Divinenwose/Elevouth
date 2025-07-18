@@ -89,22 +89,22 @@ const Footer = () => {
                 </div>
                 <div className="social-icons">
                     <div className="rings">
-                        <img src={facebook} alt="" />
+                        <a href=""><img src={facebook} alt="" /></a>
                     </div>
                     <div className="rings">
-                        <img src={linkedin} alt="" />
+                        <a href="https://www.linkedin.com/company/elevouth-hub/"><img src={linkedin} alt="" /></a>
                     </div>
                     <div className="rings">
-                        <img src={logo} alt="" />
+                        <a href="https://www.instagram.com/elevouth_hq?igsh=MW5xNmduemg1ZHU2Ng==" target="blank"><img src={logo} alt="" /></a>
                     </div>
                     <div className="rings">
-                        <img src={tiktok} alt="" />
+                        <a href=""><img src={tiktok} alt="" /></a>
                     </div>
                     <div className="rings">
-                        <img src={youtube} alt="" />
+                        <a href=""><img src={youtube} alt="" /></a>
                     </div>
                     <div className="rings">
-                        <img src={twitter} alt="" />
+                        <a href="https://x.com/elevouth_hub?t=CJQIQJG3Vxm_dQbDrjuZeA&s=08" target="blank"><img src={twitter} alt="" /></a>
                     </div>
                 </div>
             </div>

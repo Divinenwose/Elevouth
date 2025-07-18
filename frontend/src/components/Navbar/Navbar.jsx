@@ -3,6 +3,7 @@ import './Navbar.css';
 import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
 import MenuIcon from "../../assets/menu.png";
+import CloseIcon from "../../assets/close-circle.png"; 
 
 const Navbar = () => {
      const [activeLink, setActiveLink] = useState("home");
@@ -33,9 +34,9 @@ const Navbar = () => {
             </div>
 
             <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-                <img src={MenuIcon} alt="Menu Icon" />
+                <img src={menuOpen ? CloseIcon : MenuIcon} alt="Menu Toggle Icon" />
             </div>
-
+            
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li className="nav-item">
                     <a href="/home" className={activeLink === "home" ? "active" : ""}

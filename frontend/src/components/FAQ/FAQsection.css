@@ -285,7 +285,7 @@
   .faq-answer {
     font-size: 16px;
     color: #444;
-    margin-top: 12px;
+    margin-top: 10px;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
@@ -298,7 +298,7 @@
 
   .faq-card:hover .faq-answer {
     opacity: 1;
-    max-height: auto;
+    max-height: 190px;
     transform: translateY(10px);
   }
 

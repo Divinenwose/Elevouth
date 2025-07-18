@@ -4,7 +4,8 @@
   padding: 20px 40px;
   position: relative;
   overflow: hidden;
-  height: 560px;
+  height: 690px;
+  position: relative;
 }
 
 .testimonial-section h2 {
@@ -205,9 +206,15 @@
   }
 }
 
+.zigzag{
+  position: absolute;
+  top: 570px ;
+  left: 0;
+}
+
 @media (max-width: 768px) {
   .testimonial-section {
-    height: 610px;
+    height: 630px;
     padding: 60px 20px;
   }
 
@@ -273,6 +280,15 @@
   .progress-bar{
     left: 30px;
     bottom: 10px;
+  }
+
+  .zigzag{
+    top:600px;
+  }
+
+  .zigzag img{
+    width: 414px;
+    height: 42px;
   }
 }
 

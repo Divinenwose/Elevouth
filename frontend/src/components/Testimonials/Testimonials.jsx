@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Testimonials.css";
 import Comma from "../../assets/comma.png";
+import zigzag from "../../assets/zigzag.png";
 
 const testimonials = [
   {
@@ -84,6 +85,9 @@ const TestimonialSection = () => {
             </div>
           );
         })}
+      </div>
+      <div className="zigzag">
+        <img src={zigzag} alt="zig-zag icon" />
       </div>
     </div>
   );
