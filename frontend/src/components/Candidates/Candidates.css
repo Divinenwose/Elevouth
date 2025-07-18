@@ -157,6 +157,18 @@
     margin-left: -10px;
   }
 
+  .candidates-card-one h4{
+    padding-top: 15px;
+  }
+
+  .candidates-card-one p{
+    padding-top: 20px;
+  }
+
+  .candidates-card-four h4{
+    padding-top: 35px;
+  }
+
   .candidates-grid h4 {
     font-size: 16px;
     line-height: 28px;
