@@ -208,7 +208,7 @@
 @media (max-width: 768px) {
   .testimonial-section {
     height: 560px;
-    padding: 0px 20px;
+    padding: 60px 20px;
   }
 
   .card-footer{

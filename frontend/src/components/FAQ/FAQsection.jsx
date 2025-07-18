@@ -78,8 +78,6 @@ const FAQSection = () => {
           <button className="contact-btn">Contact Us</button>
         </div>
       </div>
-
-      {/* Desktop carousel */}
       <div className="faq-carousel">
         <div className="arrow-btn-wrapper">
           <button
@@ -113,8 +111,6 @@ const FAQSection = () => {
           </button>
         </div>
       </div>
-
-      {/* Dots (always visible on desktop) */}
       <div className="faq-dots desktop-only">
         {Array.from({ length: totalPages }).map((_, i) => (
           <span
@@ -124,8 +120,6 @@ const FAQSection = () => {
           ></span>
         ))}
       </div>
-
-      {/* Mobile arrows + dots only */}
       <div className="faq-dots-wrapper-mobile">
         <button
           onClick={handlePrev}
