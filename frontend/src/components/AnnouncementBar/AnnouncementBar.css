@@ -1,0 +1,70 @@
+.announcement-bar {
+  width: 100%;
+  background-color: #FDEFC0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-text {
+  display: flex;
+  animation: scroll-left 80s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.scroll-text::after {
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+.scroll-item {
+  display: flex;
+  align-items: center;
+  margin-right: 100px; 
+}
+
+.scroll-item img {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+.scroll-item h2 {
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: Italic;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2B302B;
+}
+
+.scroll-item p {
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2B302B;
+    margin-left: 5px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+

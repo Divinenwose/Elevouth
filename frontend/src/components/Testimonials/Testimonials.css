@@ -18,6 +18,7 @@
   line-height: 56px;
   letter-spacing: 0%;
   color: #606260;
+  margin-top: 30px;
 }
 
 .testimonial-section p {
@@ -208,8 +209,8 @@
 
 .zigzag{
   position: absolute;
-  top: 570px ;
-  left: 0;
+  top: 605px ;
+  left: 0px;
 }
 
 @media (max-width: 768px) {
@@ -225,6 +226,7 @@
   .testimonial-section h2 {
     font-size: 28px;
     line-height: 40px;
+    margin-top: 10px;
   }
 
   .testimonial-section p {

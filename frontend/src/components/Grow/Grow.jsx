@@ -16,7 +16,7 @@ const Grow = () => {
                         Stay motivated, ask real questions, and grow together. No  more doing it alone.
                     </p>
                     <div className="hub-wrapper">
-                        <a href="#" className="hub">Join the Hub</a>
+                        <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="hub">Join the Hub</a>
                     </div>
                 </div>
             </div>

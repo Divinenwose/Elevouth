@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Navbar.css';
+import { Link } from "react-router-dom";
 import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
 import MenuIcon from "../../assets/menu.png";
@@ -39,14 +40,24 @@ const Navbar = () => {
             
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li className="nav-item">
-                    <a href="/home" className={activeLink === "home" ? "active" : ""}
-                        onClick={() => handleLinkClick("home")}>Home</a>
+                    <Link
+                        to="/home"
+                        className={activeLink === "home" ? "active" : ""}
+                        onClick={() => handleLinkClick("home")}
+                    >
+                        Home
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/aboutUs" className={activeLink === "aboutUs" ? "active" : ""}
-                        onClick={() => handleLinkClick("aboutUs")}>About Us</a>
+                    <Link
+                        to="/aboutUs"
+                        className={activeLink === "aboutUs" ? "active" : ""}
+                        onClick={() => handleLinkClick("aboutUs")}
+                    >
+                        About Us
+                    </Link>
                 </li>
-
+                
                 <li className="nav-item dropdown">
                     <a href="#">Programs <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
@@ -55,6 +66,16 @@ const Navbar = () => {
                         <li><a href="#" onClick={() => setMenuOpen(false)}>Career Services</a></li>
                         <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
                     </ul>
+                </li>
+
+                <li className="nav-item">
+                    <Link
+                        to="/events"
+                        className={activeLink === "events" ? "active" : ""}
+                        onClick={() => handleLinkClick("events")}
+                    >
+                        Events
+                    </Link>
                 </li>
 
                 <li className="nav-item dropdown">
@@ -77,24 +98,13 @@ const Navbar = () => {
                     </ul>
                 </li>
 
-                <li className="nav-item dropdown">
-                    <a href="#">Resources <img src={Arrowdown} alt="" /></a>
-                    <ul className="dropdown-menu">
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>The Academy</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Career Services</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
-                    </ul>
-                </li>
-
-                {/* Join The Hub for mobile */}
                 <li className="nav-item mobile-btn">
-                    <button className="nav-btn" onClick={() => setMenuOpen(false)}>Join The Hub</button>
+                    <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="nav-btn" onClick={() => setMenuOpen(false)}>Join The Hub</a>
                 </li>
             </ul>
 
             <div className="nav-btn-container">
-                <button className="nav-btn">Join The Hub</button>
+                <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="nav-btn">Join The Hub</a>
             </div>
         </nav>
     );

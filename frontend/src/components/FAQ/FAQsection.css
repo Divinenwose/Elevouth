@@ -18,6 +18,10 @@
   color: #151B17;
 }
 
+.faq-section-left{
+  padding-left: 30px;
+}
+
 .faq-section-content h2 {
   font-family: "Arima";
   font-weight: 400;
@@ -86,15 +90,14 @@
 .faq-cards {
   display: flex;
   gap: 20px;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scroll-behavior: smooth; 
 }
 
 .faq-card {
   background: #FEFCF9;
   border-radius: 10px;
   width: 400px;
-  height: 347px;
+  height: 327px;
   padding: 24px;
   position: relative;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -143,7 +146,7 @@
 .faq-answer {
   font-size: 16px;
   color: #444;
-  margin-top: 12px;
+  margin-top: 22px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -212,6 +215,10 @@
     font-style: Bold;
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .faq-section-left{
+    padding-left: 0px;
   }
 
   .faq-section-content h2 {
