@@ -12,7 +12,7 @@
 
 .scroll-text {
   display: flex;
-  animation: scroll-left 80s linear infinite;
+  animation: scroll-left 300s linear infinite;
   white-space: nowrap;
   align-items: center;
   padding-bottom: 10px;
@@ -62,7 +62,31 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-item h2 {
+    font-size: 16px;
+  }
+
+  .scroll-item p {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .scroll-item img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .scroll-item {
+    margin-right: 60px;
+  }
+
+  .announcement-bar {
+    height: 60px;
   }
 }
 
