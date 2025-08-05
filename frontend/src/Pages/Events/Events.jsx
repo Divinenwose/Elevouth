@@ -70,7 +70,7 @@ const Events = () => {
                 </div>
 
                 <div className="event-hero-container">
-                    <div className="hero-content">
+                    <div className="event-hero-content">
                         <img src={Eventhero} alt="" />
                     </div>
                     <div className="countdown-overlay">
