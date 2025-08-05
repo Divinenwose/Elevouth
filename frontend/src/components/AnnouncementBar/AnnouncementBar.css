@@ -27,8 +27,15 @@
 .scroll-item {
   display: flex;
   align-items: center;
-  margin-right: 100px; 
+  margin-right: 100px;
+  flex-shrink: 0;
+  text-decoration: none;
 }
+
+.scroll-item:hover {
+  opacity: 0.8; 
+}
+
 
 .scroll-item img {
   height: 24px;
