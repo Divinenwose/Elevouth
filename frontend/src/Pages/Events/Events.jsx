@@ -64,7 +64,7 @@ const Events = () => {
                     </div>
                     <h2>Global Talent Summit 2025</h2>
                     <div className="global-btn">
-                        <a href="" className="reserve">Reserve Your Spot</a>
+                        <a href="https://lu.ma/ig51d4z2" target="blank" className="reserve">Reserve Your Spot</a>
                         <a href="" className="sponsor">Become a Sponsor</a>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ const Events = () => {
                     </div>
                 </div>
                 <div className="reserve-btn-container">
-                    <a href="" className="reserve">Reserve Your Spot</a>
+                    <a href="https://lu.ma/ig51d4z2" target="blank" className="reserve">Reserve Your Spot</a>
                 </div>
             </section>
             <section className="sponsors">
