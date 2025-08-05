@@ -98,7 +98,7 @@ const Navbar = () => {
                     </ul>
                 </li>
 
-                <li className="nav-item mobile-btn">
+                <li className="mobile-btn">
                     <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="nav-btn" onClick={() => setMenuOpen(false)}>Join The Hub</a>
                 </li>
             </ul>

@@ -171,7 +171,7 @@
 
 @media screen and (max-width: 768px) {
   .cards-container {
-    padding: 40px 20px;
+    padding: 20px;
   }
 
   .cards-content-container {
@@ -188,6 +188,7 @@
     letter-spacing: 0%;
     width: 380px;
     margin-left: 40px;
+    margin-top: 10px;
   }
 
   .cards-content-container p {

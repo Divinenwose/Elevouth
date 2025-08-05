@@ -85,8 +85,8 @@
 
 @media (max-width: 768px) {
   .grow-container{
-    padding: 10px;
-  }
+    padding: 7px;
+  } 
 
   .grow-content {
     flex-direction: column-reverse;
@@ -94,7 +94,7 @@
     margin-top: 30px;
   }
   .grow-text{
-    margin-left: -20px;
+    margin-left: -44px;
   }
 
   .grow-text h2{
@@ -113,11 +113,11 @@
     margin-left: 0;
     min-width: 400px;
     max-width: 690px;
-    margin-left: -40px;
+    margin-left: -54px;
   }
 
   .grow-image-wrapper img{
-    width: 430px;
+    width: 470px;
   }
 
   .hub {

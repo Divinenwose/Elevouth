@@ -166,7 +166,7 @@
     z-index: 998;
     align-items: flex-end; 
     text-align: left;
-    gap: 0.5 rem;
+    gap: 18px;
   }
 
   .nav-links.open {
@@ -183,7 +183,8 @@
     display: block;
     width: 100%;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
   .nav-links .mobile-btn .nav-btn {
@@ -191,7 +192,7 @@
   }
 
   .nav-logo-container {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .nav-logo-container .logo {
@@ -199,7 +200,7 @@
     height: 20px;
   }
 
-  .nav-logo-container h1 {
+  .nav-logo-container h1 { 
     font-size: 20px;
   }
 
@@ -208,10 +209,12 @@
   }
 
   .navbar {
-    position: relative;
+    height: 70px;
+    position: fixed;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 18px;
+    margin-top: 45px;
   }
 
   .dropdown-menu {

@@ -98,9 +98,9 @@
 }
 
 @media (max-width: 768px) {
-    .candidate-container{
-        padding: 20px;
-    }
+  .candidate-container{
+    padding: 20px;
+  }
 
   .candidates-content-container {
     flex-direction: column;
@@ -132,7 +132,7 @@
   .career-btn-wrapper-responsive{
         display: block;
         margin-top: 40px;
-    }
+    } 
 
   .career-btn-wrapper-responsive .career-btn {
       width: 100%;
@@ -166,7 +166,7 @@
   }
 
   .candidates-card-four h4{
-    padding-top: 35px;
+    padding-top: 35px;  
   }
 
   .candidates-grid h4 {
