@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Grow.css";
 import Growimg from "../../assets/get-image.png";
 
@@ -16,7 +17,9 @@ const Grow = () => {
                         Stay motivated, ask real questions, and grow together. No  more doing it alone.
                     </p>
                     <div className="hub-wrapper">
-                        <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="hub">Join the Hub</a>
+                        <Link to="/join-the-hub" className="hub">
+                            Join the Hub
+                        </Link>
                     </div>
                 </div>
             </div>

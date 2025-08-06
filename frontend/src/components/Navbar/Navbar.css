@@ -142,6 +142,14 @@
   display: none;
 }
 
+.nav-btn.disabled {
+  background: #595D59;
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
 
 @media (max-width: 768px) {
   .menu-icon {

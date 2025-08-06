@@ -1,15 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Navbar.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
 import MenuIcon from "../../assets/menu.png";
 import CloseIcon from "../../assets/close-circle.png"; 
 
 const Navbar = () => {
-     const [activeLink, setActiveLink] = useState("home");
+    const [activeLink, setActiveLink] = useState("home");
     const [menuOpen, setMenuOpen] = useState(false);
     const navRef = useRef();
+    const location = useLocation();
+    const isOnJoinHubPage = location.pathname === "/join-the-hub";
+
+
 
     const handleLinkClick = (link) => {
         setActiveLink(link);
@@ -97,15 +101,29 @@ const Navbar = () => {
                         <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
                     </ul>
                 </li>
-
                 <li className="mobile-btn">
-                    <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="nav-btn" onClick={() => setMenuOpen(false)}>Join The Hub</a>
+                    <Link
+                        to={isOnJoinHubPage ? "#" : "/join-the-hub"}
+                        className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
+                        onClick={(e) => {
+                            if (isOnJoinHubPage) e.preventDefault();
+                            else setMenuOpen(false);
+                        }}
+                    >
+                        Join The Hub
+                    </Link>
                 </li>
             </ul>
-
             <div className="nav-btn-container">
-                <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="nav-btn">Join The Hub</a>
+                <Link
+                    to={isOnJoinHubPage ? "#" : "/join-the-hub"}
+                    className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
+                    onClick={(e) => isOnJoinHubPage && e.preventDefault()}
+                >
+                    Join The Hub
+                </Link>
             </div>
+
         </nav>
     );
 };

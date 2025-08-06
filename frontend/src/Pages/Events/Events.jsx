@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import './Events.css';
 import Calendar from "../../assets/calendar.png";
 import Clock from "../../assets/clock.png";
@@ -12,9 +12,66 @@ import PastLeft from "../../assets/pastleft.png";
 import PastRight from "../../assets/pastright.png";
 import Contact from "../../components/Contact/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import placeholder from "../../assets/placeholder.png";
 
 
 const Events = () => {
+
+    const speakers = [
+        {
+            role: "Panelist",
+            name: "Revealing Soon",
+            title: "",
+            session: "Stay Tuned",
+        },
+        {
+            role: "Keynote Speaker",
+            name: "Revealing Soon",
+            title: "CEO, RemoteReady Africa",
+            session: "The Future of Remote Work for African Talent",
+        },
+        {
+            role: "Workshop Host",
+            name: "Fatima Bello",
+            title: "Career Strategist, LinkedIn Africa",
+            session: "The New Rules of Hiring in Tech",
+        },
+        {
+            role: "Workshop Host",
+            name: "Fatima Bello",
+            title: "Career Strategist, LinkedIn Africa",
+            session: "The New Rules of Hiring in Tech",
+        },
+        {
+            role: "Workshop Host",
+            name: "Fatima Bello",
+            title: "Career Strategist, LinkedIn Africa",
+            session: "The New Rules of Hiring in Tech",
+        },
+    ];
+
+    const scrollRef = useRef(null);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const speakersPerPage = 3;
+    const totalSlides = Math.ceil(speakers.length / speakersPerPage);
+
+    const scrollTo = (index) => {
+        if (scrollRef.current) {
+            const cardWidth = scrollRef.current.offsetWidth / speakersPerPage;
+            const scrollAmount = index * cardWidth * speakersPerPage;
+            scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
+            setCurrentSlide(index);
+        }
+    };
+
+    const handleLeft = () => {
+        if (currentSlide > 0) scrollTo(currentSlide - 1);
+    };
+
+    const handleRight = () => {
+        if (currentSlide < totalSlides - 1) scrollTo(currentSlide + 1);
+    };
+
 
     useEffect(() => {
         const target = new Date("September 19, 2025 10:00:00").getTime();
@@ -42,6 +99,7 @@ const Events = () => {
         return () => clearInterval(interval);
     }, []);
 
+    
     return (
         <div className="events-container">
             <section className="evnt-top">
@@ -65,7 +123,7 @@ const Events = () => {
                     <h2>Global Talent Summit 2025</h2>
                     <div className="global-btn">
                         <a href="https://lu.ma/ig51d4z2" target="blank" className="reserve">Reserve Your Spot</a>
-                        <a href="" className="sponsor">Become a Sponsor</a>
+                        <a href="https://forms.gle/rJJZ9qFbgdLdL44G6" target="blank" className="sponsor">Become a Sponsor</a>
                     </div>
                 </div>
 
@@ -204,6 +262,34 @@ const Events = () => {
                     <h4>Meet the Voices Shaping the Future</h4>
                     <p>Get ready to hear from bold voices, brilliant thinkers, and game-changers redefining the future of work.</p>
                 </div>
+                <div className="events-carousel">
+                   <button className="nav-arrow left" onClick={handleLeft} disabled={currentSlide === 0}>←</button>
+                    <div className="speaker-cards-wrapper">
+                        <div className="speaker-cards" ref={scrollRef}>
+                            {speakers.map((speaker, index) => (
+                                <div className="speaker-card" key={index}>
+                                    <div className="speaker-role">
+                                        <p>{speaker.role}</p>
+                                    </div>
+                                    <div className="speaker-image">
+                                        <img src={placeholder} alt="avatar" />
+                                    </div>
+                                    <h4 className="speaker-name">{speaker.name}</h4>
+                                    {speaker.title && <p className="speaker-title">{speaker.title}</p>}
+                                    <p className="speaker-session">
+                                        <strong className="sess">Session:</strong> {speaker.session}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <button className="nav-arrow right" onClick={handleRight} disabled={currentSlide === totalSlides - 1}>→</button>
+                </div>
+                <div className="carousel-indicator">
+                    {Array.from({ length: totalSlides }).map((_, i) => (
+                        <span key={i} className={`dot ${i === currentSlide ? 'active' : ''}`}></span>
+                    ))}
+                </div>
             </section>
             <section className="partners">
                 <div className="partners-content">
@@ -211,8 +297,8 @@ const Events = () => {
                         <h2>Want to Sponsor or Partner with us?</h2>
                         <p>Be part of the movement shaping tomorrow’s talent. Elevouth invites organizations, brands, and communities to support and gain visibility at Africa’s most impactful career summit.</p>
                         <div className="partner-links">
-                            <a href="" className="become-cta">Become a Sponsor</a>
-                            <a href="" className="partner-cta">Partner with Us</a>
+                            <a href="https://forms.gle/rJJZ9qFbgdLdL44G6" target="blank" className="become-cta">Become a Sponsor</a>
+                            <a href="https://forms.gle/1QJ8JMH6RPSXBkth7" target="blank" className="partner-cta">Partner with Us</a>
                         </div>
                     </div>
                     <div className="partners-right">
@@ -240,7 +326,7 @@ const Events = () => {
                         <div className="past-events-right-write-up">
                             <h4>Tune Into Our X Spaces</h4>
                             <p>Real conversations with real people — tackling growth, work, and opportunities in tech and beyond.</p>
-                            <a href="" className="listen"> Listen on X</a>
+                            <a href="https://x.com/elevouth_hub?t=CJQIQJG3Vxm_dQbDrjuZeA&s=08" target="blank" className="listen"> Listen on X</a>
                         </div>
 
                     </div>

@@ -1,0 +1,42 @@
+.jth-hero{
+    background: #F6FCF2;
+    height: 1110px;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.jth-hero-container{
+    display: flex;
+    align-items: center;
+}
+
+.jth-content h2{
+    font-family: "Arima";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 68px;
+    line-height: 90px;
+    letter-spacing: 0%;
+    color: #555555;
+    width: 574px;
+}
+
+.jth-content p{
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.hub-wrapper{
+    margin-top: 40px;
+}
+
+.jth-image img{
+    width: 797px;
+    height: 653px;
+}

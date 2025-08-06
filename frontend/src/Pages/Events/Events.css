@@ -225,7 +225,7 @@
     line-height: 28px;
     letter-spacing: 0%;
     color: #333333;
-    width: 588px;
+    width: 570px;
 }
 
 .event-about-content-right{
@@ -312,8 +312,9 @@
 
 .voices{
     background: #F6FBFC;
-    height: 998px;
+    height: 880px;
     padding: 40px;
+    position: relative;
 }
 
 .voices-writeup{
@@ -342,6 +343,162 @@
     letter-spacing: 0%;
     color: #111511;
 }
+
+
+.events-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 90px;
+  gap: 20px;
+}
+
+.speaker-cards-wrapper {
+  overflow: hidden;
+  width: calc(350px * 3 + 20px * 2); 
+  margin: 0 auto;
+  position: relative;
+}
+
+.speaker-cards {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease-in-out;
+}
+
+.speaker-card {
+    min-width: 350px;
+    height: 530px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 17px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    transition: transform 0.3s ease;
+}
+
+.speaker-image{
+    margin-top: 30px;
+    width: 315px;
+    height: 251px;
+    border-radius: 4px;
+    background: #F8F9F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-image img {
+    width: 145px;
+    height: 145px;
+}
+
+.speaker-role {
+    width: 128px;
+    height: 32px;
+    border-radius: 9999px;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    background: #FFFAEBE0;
+    margin-left: 190px;
+}
+
+.speaker-role p{
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #695515;
+    white-space: nowrap;
+}
+
+.speaker-name {
+    font-family: "Arima";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #606260;
+    margin-top: 30px;
+}
+
+.speaker-title {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #111511;
+    margin-top: 15px;
+}
+
+.sess{
+    font-family: "Manrope";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #414441;
+}
+
+.speaker-session {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #111511;
+    margin-top: 20px;
+}
+
+.nav-arrow {
+    background: #FACB33;
+    border: none;
+    color: black;
+    padding: 10px 14px;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 0.5px;
+}
+
+.nav-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #EEEFEE;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #F9A620;
+}
+
 
 .partners{
     height: 706px;
@@ -665,4 +822,5 @@
     letter-spacing: 0%;
     color: #FACB33;
 }
+
 

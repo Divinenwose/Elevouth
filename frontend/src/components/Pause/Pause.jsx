@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Pause.css';
 import Envelope from "../../assets/envelope.png";
 
@@ -20,7 +21,9 @@ const Pause = () => {
                     <div className="line"></div>
                     <p>This is not a dream. This is what happens when clarity meets the right support. This is Elevouth.</p>
                 </div>
-                <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="pause-btn">Join The Hub</a>
+                <Link to="/join-the-hub" className="pause-btn">
+                    Join The Hub
+                </Link>
             </div>
         </section>
     );
