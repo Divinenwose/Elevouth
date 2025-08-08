@@ -1,8 +1,8 @@
 .jth-hero{
     background: #F6FCF2;
-    height: 1110px;
+    height: 700px;
     padding: 40px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .jth-hero-container{
@@ -39,4 +39,121 @@
 .jth-image img{
     width: 797px;
     height: 653px;
+}
+
+.hub-welcome{
+    background: #F6FBFC;
+    height: 858px;
+    padding: 40px;
+}
+
+.hub-welcome-content h4{
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 68px;
+    letter-spacing: 0%;
+    color: #606260;
+}
+
+.hub-welcome-content span{
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.hub-welcome-content p{
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #111511;
+    width: 625px;
+    margin-top: 15px;
+}
+
+.hub-cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding-left: 6px; 
+  padding-right: 20px;
+}
+
+.hub-cards-one,
+.hub-cards-two,
+.hub-cards-three {
+    grid-column: span 2;
+    width: 410px; 
+    height: 189px;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 96px;
+    opacity: 1;
+    border-width: 0.5px;
+    background: #FFFFFF;
+}
+
+
+.hub-cards-four,
+.hub-cards-five,
+.hub-cards-six {
+  width: 100%; 
+  grid-column: span 2; 
+  height: 189px;
+  opacity: 1;
+  border-radius: 8px;
+  border-width: 0.5px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+
+
+.hub-cards-container h4{
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #424342;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+
+
+.hub-cards-container .hub-paragraph{
+    font-family: Manrope;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #111511;
+    margin-top: 30px;
+}
+
+.way{
+    background: #F6FCF2F9;
+    height: 998px;
+}
+
+.stress{
+    background: #071F07;
+    height: 400px;
 }
