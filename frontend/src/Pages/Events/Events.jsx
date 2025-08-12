@@ -17,6 +17,10 @@ import placeholder from "../../assets/placeholder.png";
 
 const Events = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const speakers = [
         {
             role: "Panelist",
