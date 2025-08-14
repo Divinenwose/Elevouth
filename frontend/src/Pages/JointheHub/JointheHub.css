@@ -1229,3 +1229,260 @@
          margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 360px){
+    .jth-hero{
+        height: 923px;
+        padding: 20px;
+        margin-top: 70px;
+        background: #FFFCF5F9;
+    }
+
+    .jth-hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jth-image img{
+        width: 466px;
+        height: 530px;
+    }
+
+    .jth-content h2{
+        font-weight: 400;
+        font-style: normal;
+        font-size: 42px;
+        line-height: 40px;
+        color: #606260;
+        width: 414px;
+        padding: 40px;
+        margin-top:-60px;
+    }
+
+    .jth-content p{
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #111511;
+        padding: 40px;
+        margin-top:-30px;
+    }
+
+    .hub-wrapper{
+        margin-top: -20px;
+        padding: 40px;
+    }
+
+    .hub-wrapper a{
+        width: 100%; 
+        height: 44px;
+        max-width: 710px; 
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #FAFCFA;
+    }
+
+    .hub-welcome{
+        height: 1410px;
+        padding: 14px;
+    }
+
+    .hub-welcome-content h4{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: #606260;
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .hub-welcome-content span{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #606260;
+    }
+
+    .hub-welcome-content p{
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        line-height: 24px;
+        width: 335px;
+    }
+
+    .hub-cards-container{
+        padding-left: 0px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five,
+    .hub-cards-six{
+        grid-column: span 6;
+        max-width: 330px;
+        height: 160px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+    }
+
+    .hub-cards-container h4{
+        font-size: 20px;
+        line-height: 32px;
+        color: #414441;
+        margin-top: 10px;
+    }
+
+    .hub-cards-container .hub-paragraph{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #414441;
+    }
+
+    .way{
+        height: 1643px;
+        padding: 20px;
+    }
+
+    .way-content h2{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+    .way-content-paragraph{
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-top: 10px;
+    }
+
+    .way-flex-container{
+        flex-direction: column;
+    }
+
+    .way-flex-left,
+    .way-flex-right{
+        width: 345px;
+    }
+
+    .way-flex-left{
+        height: 550px;
+    }
+
+    .way-flex-right{
+        height: 805px;
+    }
+
+    .first-paragraph{
+        font-size: 20px;
+    }
+
+    .naira{
+        font-size: 32px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .zero{
+        font-size: 56px;
+        line-height: 31px;
+    }
+
+    .way-content-btn a{
+        width: 100%;
+        max-width: 374px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-inline: 106px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .way-tick img{
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .way-tick p{
+        font-size: 14px;
+    }
+
+    .sign{
+        width: 190px;
+        height: 49px;
+        top: -15px;
+        left: 80px;
+    }
+
+    .stress{
+        height: 353px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .stress-content h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stress-content p{
+        font-size: 16px;
+        line-height: 25px;
+        color: #F0F0F0;
+    }
+
+    .stress-btn-join{
+        width: 148px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+        font-size: 12px;
+    }
+
+    .stress-btn-explore{
+        width: 128px;
+        height: 40px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .stress-btn{
+         margin-top: 20px;
+    }
+}
