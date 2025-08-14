@@ -89,7 +89,7 @@ const JointheHub = () => {
                                 <p className="billed">/Billed Monthly</p>
                             </div>
                             <div className="way-content-btn">
-                                <a href="#" className="way-join-the-hub">Join the Hub</a>
+                                <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="way-join-the-hub">Join the Hub</a>
                             </div>
                         </div>
                         <div className="way-tick-container">
@@ -177,7 +177,7 @@ const JointheHub = () => {
                         <p>The Hub is open to anyone serious about growth. It’s free to <br /> join — all you need is the willingness to show up and grow.</p>
                     </div>
                     <div className="stress-btn">
-                        <a href="" className="stress-btn-join">Join the Hub</a>
+                        <a href="https://forms.gle/kR9PhDHTPqJFqUHq6" target="blank" className="stress-btn-join">Join the Hub</a>
                         <a href="" className="stress-btn-explore">Explore Career Tools</a>
                     </div>
                 </div>

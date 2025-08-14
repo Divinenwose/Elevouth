@@ -138,7 +138,7 @@
 
 
 .hub-cards-container .hub-paragraph{
-    font-family: Manrope;
+    font-family: "Manrope";
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -157,7 +157,7 @@
 .way-content h2{
     font-family: "Arima";
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 48px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -177,6 +177,7 @@
 
 .way-flex-container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 40px;
     gap: 40px;
@@ -229,7 +230,7 @@
 }
 
 .zero{
-    font-family: Arima;
+    font-family: "Arima";
     font-weight: 700;
     font-style: Bold;
     font-size: 64px;
@@ -271,7 +272,7 @@
 }
 
 .billed-right{
-    font-family: Arima;
+    font-family: "Arima";
     font-weight: 700;
     font-style: Bold;
     font-size: 24px;
@@ -386,4 +387,845 @@
     line-height: 28px;
     letter-spacing: 0%;
     color: #FACB33;
+}
+
+
+
+@media screen and (min-width:912px) and (max-width:1024px)  {
+    .jth-hero{
+        padding: 30px;
+    }
+    .jth-content h2{
+        font-size: 48px;
+    }
+
+    .jth-content p{
+        font-size: 16px;
+        width: 380px;
+    }
+
+    .jth-image img{
+        width: 560px;
+        margin-left: -90px;
+    }
+
+    .hub-welcome{
+        height: 1060px;
+    }
+
+    .hub-cards-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five{
+        width: 462px;
+    }
+
+    .way{
+        height: 1290px;
+    }
+
+    .way-flex-container{
+        margin-top: 90px;
+        display: flex;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .way-flex-left,
+    .way-flex-right{
+        width: 500px;
+    }
+
+    .way-flex-left{
+        height: 680px;
+    }
+
+    .way-flex-right{
+        height: 960px;
+    }
+
+    .way-content-btn a{
+        padding-inline: 120px;
+        margin-left: 40px;
+    }
+
+    .sign{
+        left: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 430px){
+    .jth-hero{
+        height: 853px;
+        padding: 20px;
+        margin-top: 70px;
+        background: #FFFCF5F9;
+    }
+
+    .jth-hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jth-image img{
+        width: 500px;
+        height: 530px;
+    }
+
+    .jth-content h2{
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 56px;
+        color: #606260;
+        width: 397px;
+        padding: 20px;
+        margin-top:-60px;
+    }
+
+    .jth-content p{
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #111511;
+        padding: 20px;
+        margin-top:-30px;
+    }
+
+    .hub-wrapper{
+        margin-top: -20px;
+        padding: 20px;
+    }
+
+    .hub-wrapper a{
+        width: 100%; 
+        height: 44px;
+        max-width: 710px; 
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #FAFCFA;
+    }
+
+    .hub-welcome{
+        height: 1410px;
+        padding: 28px;
+    }
+
+    .hub-welcome-content h4{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: #606260;
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .hub-welcome-content span{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #606260;
+    }
+
+    .hub-welcome-content p{
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        line-height: 24px;
+        width: 375px;
+    }
+
+    .hub-cards-container{
+        padding-left: 0px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five,
+    .hub-cards-six{
+        grid-column: span 6;
+        max-width: 370px;
+        height: 160px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+    }
+
+    .hub-cards-container h4{
+        font-size: 24px;
+        line-height: 32px;
+        color: #414441;
+        margin-top: 10px;
+    }
+
+    .hub-cards-container .hub-paragraph{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #414441;
+    }
+
+    .way{
+        height: 1643px;
+        padding: 29px;
+    }
+
+    .way-content h2{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+    .way-content-paragraph{
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-top: 10px;
+    }
+
+    .way-flex-container{
+        flex-direction: column;
+    }
+
+    .way-flex-left,
+    .way-flex-right{
+        width: 383px;
+    }
+
+    .way-flex-left{
+        height: 550px;
+    }
+
+    .way-flex-right{
+        height: 805px;
+    }
+
+    .first-paragraph{
+        font-size: 20px;
+    }
+
+    .naira{
+        font-size: 32px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .zero{
+        font-size: 56px;
+        line-height: 31px;
+    }
+
+    .way-content-btn a{
+        width: 100%;
+        max-width: 374px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-inline: 109px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .way-tick img{
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .way-tick p{
+        font-size: 14px;
+    }
+
+    .sign{
+        width: 190px;
+        height: 49px;
+        top: -15px;
+        left: 80px;
+    }
+
+    .stress{
+        height: 353px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .stress-content h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stress-content p{
+        font-size: 16px;
+        line-height: 25px;
+        color: #F0F0F0;
+    }
+
+    .stress-btn-join{
+        width: 178px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+    }
+
+    .stress-btn-explore{
+        width: 178px;
+        height: 40px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .stress-btn{
+         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .jth-hero{
+        height: 853px;
+        padding: 20px;
+        margin-top: 70px;
+        background: #FFFCF5F9;
+    }
+
+    .jth-hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jth-image img{
+        width: 500px;
+        height: 530px;
+    }
+
+    .jth-content h2{
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 56px;
+        color: #606260;
+        width: 397px;
+        padding: 20px;
+        margin-top:-60px;
+    }
+
+    .jth-content p{
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #111511;
+        padding: 20px;
+        margin-top:-30px;
+    }
+
+    .hub-wrapper{
+        margin-top: -20px;
+        padding: 20px;
+    }
+
+    .hub-wrapper a{
+        width: 100%; 
+        height: 44px;
+        max-width: 710px; 
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #FAFCFA;
+    }
+
+    .hub-welcome{
+        height: 1410px;
+        padding: 22px;
+    }
+
+    .hub-welcome-content h4{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: #606260;
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .hub-welcome-content span{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #606260;
+    }
+
+    .hub-welcome-content p{
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        line-height: 24px;
+        width: 375px;
+    }
+
+    .hub-cards-container{
+        padding-left: 0px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five,
+    .hub-cards-six{
+        grid-column: span 6;
+        max-width: 360px;
+        height: 160px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+    }
+
+    .hub-cards-container h4{
+        font-size: 24px;
+        line-height: 32px;
+        color: #414441;
+        margin-top: 10px;
+    }
+
+    .hub-cards-container .hub-paragraph{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #414441;
+    }
+
+    .way{
+        height: 1643px;
+        padding: 25px;
+    }
+
+    .way-content h2{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+    .way-content-paragraph{
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-top: 10px;
+    }
+
+    .way-flex-container{
+        flex-direction: column;
+    }
+
+    .way-flex-left,
+    .way-flex-right{
+        width: 363px;
+    }
+
+    .way-flex-left{
+        height: 550px;
+    }
+
+    .way-flex-right{
+        height: 805px;
+    }
+
+    .first-paragraph{
+        font-size: 20px;
+    }
+
+    .naira{
+        font-size: 32px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .zero{
+        font-size: 56px;
+        line-height: 31px;
+    }
+
+    .way-content-btn a{
+        width: 100%;
+        max-width: 374px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-inline: 109px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .way-tick img{
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .way-tick p{
+        font-size: 14px;
+    }
+
+    .sign{
+        width: 190px;
+        height: 49px;
+        top: -15px;
+        left: 80px;
+    }
+
+    .stress{
+        height: 353px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .stress-content h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stress-content p{
+        font-size: 16px;
+        line-height: 25px;
+        color: #F0F0F0;
+    }
+
+    .stress-btn-join{
+        width: 178px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+    }
+
+    .stress-btn-explore{
+        width: 178px;
+        height: 40px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .stress-btn{
+         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .jth-hero{
+        height: 853px;
+        padding: 20px;
+        margin-top: 70px;
+        background: #FFFCF5F9;
+    }
+
+    .jth-hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jth-image img{
+        width: 496px;
+        height: 530px;
+    }
+
+    .jth-content h2{
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 56px;
+        color: #606260;
+        width: 397px;
+        padding: 20px;
+        margin-top:-60px;
+    }
+
+    .jth-content p{
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #111511;
+        padding: 20px;
+        margin-top:-30px;
+    }
+
+    .hub-wrapper{
+        margin-top: -20px;
+        padding: 20px;
+    }
+
+    .hub-wrapper a{
+        width: 100%; 
+        height: 44px;
+        max-width: 710px; 
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #FAFCFA;
+    }
+
+    .hub-welcome{
+        height: 1410px;
+        padding: 14px;
+    }
+
+    .hub-welcome-content h4{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: #606260;
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .hub-welcome-content span{
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #606260;
+    }
+
+    .hub-welcome-content p{
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        line-height: 24px;
+        width: 375px;
+    }
+
+    .hub-cards-container{
+        padding-left: 0px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five,
+    .hub-cards-six{
+        grid-column: span 6;
+        max-width: 350px;
+        height: 160px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid #F0F0F0;
+    }
+
+    .hub-cards-container h4{
+        font-size: 24px;
+        line-height: 32px;
+        color: #414441;
+        margin-top: 10px;
+    }
+
+    .hub-cards-container .hub-paragraph{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #414441;
+    }
+
+    .way{
+        height: 1643px;
+        padding: 20px;
+    }
+
+    .way-content h2{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+    .way-content-paragraph{
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-top: 10px;
+    }
+
+    .way-flex-container{
+        flex-direction: column;
+    }
+
+    .way-flex-left,
+    .way-flex-right{
+        width: 358px;
+    }
+
+    .way-flex-left{
+        height: 550px;
+    }
+
+    .way-flex-right{
+        height: 805px;
+    }
+
+    .first-paragraph{
+        font-size: 20px;
+    }
+
+    .naira{
+        font-size: 32px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .zero{
+        font-size: 56px;
+        line-height: 31px;
+    }
+
+    .way-content-btn a{
+        width: 100%;
+        max-width: 374px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-inline: 109px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .way-tick img{
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .way-tick p{
+        font-size: 14px;
+    }
+
+    .sign{
+        width: 190px;
+        height: 49px;
+        top: -15px;
+        left: 80px;
+    }
+
+    .stress{
+        height: 353px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .stress-content h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stress-content p{
+        font-size: 16px;
+        line-height: 25px;
+        color: #F0F0F0;
+    }
+
+    .stress-btn-join{
+        width: 178px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+    }
+
+    .stress-btn-explore{
+        width: 178px;
+        height: 40px;
+        border-radius: 4px;
+        border-width: 1px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .stress-btn{
+         margin-top: 20px;
+    }
 }

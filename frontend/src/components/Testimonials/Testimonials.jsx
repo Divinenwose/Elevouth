@@ -5,7 +5,7 @@ import zigzag from "../../assets/zigzag.png";
 
 const testimonials = [
   {
-    text: "Before Elevouth, I had no direction. The Career Compass showed me a clear path and gave me the confidence to chase real opportunities.",
+    text: "I joined Elevouth in May as a Volunteer Lead PM, and the hands-on experience transformed me in less than 3 months. Between May and July, I secured three job offers — a testament to growth, impact, and the power of showing up.",
     name: "Anita O.",
     role: "Product Designer",
     handle: "@Anita_Designer",
