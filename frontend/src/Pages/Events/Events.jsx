@@ -7,6 +7,7 @@ import Eventhero from "../../assets/event-hero.png";
 import Timerdots from "../../assets/timer dots.png";
 import Tick from "../../assets/tick-square.png";
 import Sponsors from "../../assets/sponsors.png";
+import Mobilesponsors from "../../assets/sponsorsmob.png";
 import Partners from "../../assets/partner.png";
 import PastLeft from "../../assets/pastleft.png";
 import PastRight from "../../assets/pastright.png";
@@ -183,7 +184,7 @@ const Events = () => {
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>5+ Global Speakers</p>
+                                    <p>10+ Global Speakers</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />

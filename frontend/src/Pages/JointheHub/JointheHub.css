@@ -1389,7 +1389,7 @@
 
     .way-flex-left,
     .way-flex-right{
-        width: 345px;
+        width: 335px;
     }
 
     .way-flex-left{
@@ -1402,6 +1402,7 @@
 
     .first-paragraph{
         font-size: 20px;
+
     }
 
     .naira{
@@ -1415,13 +1416,17 @@
         line-height: 31px;
     }
 
+    .billed{
+        white-space: nowrap;
+    }
+
     .way-content-btn a{
         width: 100%;
         max-width: 374px;
         border-radius: 4px;
         padding-top: 12px;
         padding-bottom: 12px;
-        padding-inline: 106px;
+        padding-inline: 100px;
         font-size: 14px;
         line-height: 22px;
     }
