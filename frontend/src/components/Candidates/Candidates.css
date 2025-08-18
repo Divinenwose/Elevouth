@@ -100,6 +100,7 @@
 @media (max-width: 768px) {
   .candidate-container{
     padding: 20px;
+    height: 900px;
   }
 
   .candidates-content-container {
@@ -187,6 +188,100 @@
   .candidates-card-four {
     height: 280px;
     width: 178px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .candidate-container{
+    padding: 10px;
+  }
+
+  .candidates-content-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .candidates-paragraph{
+    margin-top: 0px;
+  }
+
+
+  .candidates-content h2 {
+    font-size: 28px;
+    line-height: 40px;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .candidates-paragraph p {
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: -40px;
+  }
+
+  .career-btn-wrapper .career-btn {
+    display: none;
+  }
+
+  .career-btn-wrapper-responsive{
+        display: block;
+        margin-top: 40px;
+    } 
+
+  .career-btn-wrapper-responsive .career-btn {
+      width: 100%;
+      max-width: 800px; 
+      height: 48px;     
+      padding: 16px 94px;
+      border-radius: 6px;
+      background: #104911;
+      font-family: "Manrope";
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 30px;
+      color: #FAFCFA;
+  }
+
+
+  .candidates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 2px;
+  }
+
+  .candidates-card-one h4{
+    padding-top: 15px;
+  }
+
+  .candidates-card-one p{
+    padding-top: 20px;
+  }
+
+  .candidates-card-four h4{
+    padding-top: 35px;  
+  }
+
+  .candidates-grid h4 {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+  .candidates-grid p {
+    font-size: 14px;
+    line-height: 100%;
+    margin-top: 20px;
+  }
+
+  .candidates-card-one,
+  .candidates-card-two,
+  .candidates-card-three,
+  .candidates-card-four {
+    height: 280px;
+    width: 166px;
     padding: 16px;
   }
 }

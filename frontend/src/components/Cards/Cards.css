@@ -256,3 +256,90 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .cards-container {
+    padding: 10px;
+  }
+
+  .cards-content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .cards-content-container h2 {
+    font-family: "Manrope";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    width: 380px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .cards-content-container p {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+    margin-left: 8px;
+    width: 335px;
+  }
+
+
+  .main-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .main-cards-one,
+  .main-cards-two,
+  .main-cards-three,
+  .main-cards-four,
+  .main-cards-five {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    grid-column: span 1;
+  }
+
+  .main-cards-container h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .main-cards-container h2 {
+    font-size: 14px;
+    line-height: 22px;
+    white-space: normal;
+    margin-top: 8px;
+  }
+
+  .main-cards-container .main-paragraph,
+  .main-cards-container .main-paragraph-two {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .learn-more {
+    margin-top: 40px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .learn-more p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .learn-more img {
+    width: 14px;
+    height: 22px;
+  }
+}
+
