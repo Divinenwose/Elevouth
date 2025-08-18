@@ -217,6 +217,16 @@
     }
 }
 
+@media screen and (max-width:414px) {
+    .contact-form-container {
+        width: 360px;
+        padding: 30px;
+        margin-top: 30px;
+        height: 620px;
+    }
+}
+
+
 @media screen and (max-width:375px) {
     .contact-form-container {
         width: 330px;
@@ -228,7 +238,7 @@
 
 @media screen and (max-width:360px) {
     .contact-form-container {
-        width: 330px;
+        width: 320px;
         padding: 20px;
         margin-top: 30px;
         height: 620px;

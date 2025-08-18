@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Do I need a tech background to join?",
-    answer: "Yes. Elevouth is open to all paths — from design to business and more.",
+    answer: "No. Elevouth is open to all paths — from design to business and more.",
   },
   {
     question: "Can we hire talents directly from Elevouth?",
