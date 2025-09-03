@@ -277,26 +277,54 @@
 
 .sponsors{
     height: 177px;
-    padding-top: 24px;
+    padding-top: 20px;
     padding-right: 120px;
     padding-bottom: 24px;
     padding-left: 40px;
     background: #FDFDFD;
+    position: relative;
 }
 
 .sponsors-container{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px
 }
 
 .sponsors-links{
-    width: 245px;
+    width: 220px;
     height: 129px;
-    padding: 40px;
+    padding-left: 14px;
+    padding-top: 38px;
     border-radius: 16px;
     background: #FDFCF8;
     border: 0.3px solid #EEEFEE;
+}
+
+.sponsors-links.aso {
+  padding-left: 50px;  
+}
+
+.sponsors-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  flex: 0 0 auto;     
+  z-index: 3;
+  background: #FDFDFD; 
+  width: 170px;
+  height: 170px;
+}
+
+.sponsors-slider {
+  display: flex;
+  gap: 15px;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .sponsors-content h4{
@@ -308,6 +336,8 @@
     letter-spacing: 0%;
     color: #414441;
     width: 120px;
+    margin-top: 40px;
+    margin-left: 45px;
 }
 
 .voices{
@@ -407,6 +437,19 @@
     margin-left: 190px;
 }
 
+.speaker-role.panelist{
+    width: 84px;
+    height: 32px;
+    border-radius: 9999px;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    background: #FFFAEBE0;
+    margin-left: 230px;
+}
+
+
 .speaker-role p{
     font-family: "Manrope";
     font-weight: 400;
@@ -461,11 +504,11 @@
     margin-top: 20px;
 }
 
-.nav-arrow {
+.arrow-btn {
     background: #FACB33;
     border: none;
     color: black;
-    padding: 10px 14px;
+    padding: 4px 10px;
     cursor: pointer;
     margin: 0 20px;
     width: 40px;
@@ -474,13 +517,14 @@
     border-width: 0.5px;
 }
 
-.nav-arrow:disabled {
+.arrow-btn:disabled {
     opacity: 0.3;
     cursor: not-allowed;
 }
 
-.carousel-indicator {
-  display: flex;
+
+.arrow-btn-wrapper {
+  display: flex; 
   justify-content: center;
   margin-top: 16px;
 }
@@ -496,6 +540,18 @@
 
 .dot.active {
   background-color: #F9A620;
+}
+
+
+.carousel-dots-desktop-only {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.carousel-dots-wrapper-mobile {
+  display: none;
 }
 
 
@@ -920,6 +976,7 @@
         letter-spacing: 0%;
     }
 
+
     .event-hero-container{
         margin-top: 40px;
         position: relative;
@@ -1050,23 +1107,33 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 130px;
+    }
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: normal;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15.07px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 44px;
     }
 
     .sponsors-links{
         height: 70px;
-        padding: 10px;
-        padding-left: 16px;
         border-radius: 4px;
         border-width: 0.3px;
-        margin-left: 20px;
+        padding-top: 8px;
+        padding-left: 18px;
+    }
+
+    .sponsors-links.aso {
+        padding-left: 48px;  
     }
 
     .voices{
@@ -1560,8 +1627,8 @@
     }
 
     .sponsors{
-        height: 140px;
-        padding-top: 32px;
+        height: 170px;
+        padding-top: 26px;
         padding-right: 16px;
         padding-bottom: 12px;
         padding-left: 16px;
@@ -1571,22 +1638,34 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 130px;
+    }
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15.07px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     .sponsors-links{
-        height: 70px;
-        padding: 10px;
+        height: 100px;
         padding-left: 16px;
         border-radius: 4px;
         border-width: 0.3px;
+        padding-top: 25px;
+        padding-left: 18px;
+    }
+
+    .sponsors-links.aso {
+        padding-left: 45px;  
     }
 
     .voices{
@@ -2079,7 +2158,7 @@
     }
 
     .sponsors{
-        height: 140px;
+        height: 160px;
         padding-top: 32px;
         padding-right: 16px;
         padding-bottom: 12px;
@@ -2090,23 +2169,29 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 140px;
+    }
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 12px;
-        line-height: 15.07px;
+        font-size: 16px;
+        line-height: 15px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     .sponsors-links{
-        height: 70px;
-        padding: 10px;
-        padding-left: 16px;
+        height: 100px;
         border-radius: 4px;
         border-width: 0.3px;
-        margin-left: 20px;
+        padding-top: 25px;
+        padding-left: 18px;
     }
 
     .voices{
@@ -2600,7 +2685,7 @@
     }
 
     .sponsors{
-        height: 140px;
+        height: 160px;
         padding-top: 32px;
         padding-right: 16px;
         padding-bottom: 12px;
@@ -2611,23 +2696,29 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 140px;
+    }
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15.07px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     .sponsors-links{
-        height: 70px;
-        padding: 10px;
-        padding-left: 16px;
+        height: 100px;
         border-radius: 4px;
         border-width: 0.3px;
-        margin-left: 20px;
+        padding-top: 25px;
+        padding-left: 18px;
     }
 
     .voices{
@@ -3120,7 +3211,7 @@
     }
 
     .sponsors{
-        height: 140px;
+        height: 160px;
         padding-top: 32px;
         padding-right: 16px;
         padding-bottom: 12px;
@@ -3131,23 +3222,29 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 140px;
+    }
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 15.07px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     .sponsors-links{
-        height: 70px;
-        padding: 10px;
-        padding-left: 16px;
+        height: 100px;
         border-radius: 4px;
         border-width: 0.3px;
-        margin-left: 20px;
+        padding-top: 25px;
+        padding-left: 18px;
     }
 
     .voices{
@@ -3638,7 +3735,7 @@
     }
 
     .sponsors{
-        height: 140px;
+        height: 160px;
         padding-top: 32px;
         padding-right: 16px;
         padding-bottom: 12px;
@@ -3649,23 +3746,30 @@
         gap: 7px;
     }
 
+    .sponsors-content{
+        width: 130px;
+        height: 140px;
+    }
+
+
     .sponsors-content h4{
         font-family: "Manrope";
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 12px;
-        line-height: 15.07px;
+        font-size: 16px;
+        line-height: 15px;
         letter-spacing: 0%;
-        width: 65px;
+        width: 89px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     .sponsors-links{
-        height: 70px;
-        padding: 10px;
-        padding-left: 16px;
+        height: 100px;
         border-radius: 4px;
         border-width: 0.3px;
-        margin-left: 20px;
+        padding-top: 25px;
+        padding-left: 18px;
     }
 
     .voices{
@@ -3699,22 +3803,10 @@
         flex-direction: column;
         gap: 10px;
         align-items: center;
-
     }
 
-    .speaker-cards-wrapper {
-        order: 1; 
-    }
-
-    .nav-arrow{
-        order: 2;
-        margin-top: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .events-carousel .nav-arrow:first-of-type {
-        margin-right: 8px; 
+    .carousel-dots .desktop-only {
+        display: none;
     }
 
     .partners{
@@ -3940,4 +4032,55 @@
     }
 }
 
+@media (max-width: 768px) {
+  .speaker-cards-wrapper {
+    width: 100%; 
+  }
+
+  .speaker-cards {
+    gap: 0;
+    justify-content: center;
+  }
+
+  .speaker-card {
+    min-width: 100%;
+  }
+
+  .arrow-btn-wrapper {
+    display: none;
+  }
+  
+  .carousel-dots-desktop-only {
+    display: none;
+  }
+
+
+  .carousel-dots-wrapper-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .carousel-dots-wrapper-mobile .arrow-btn {
+    background: #FACB33;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .carousel-dots-wrapper-mobile .arrow-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .carousel-dots-wrapper-mobile .carousel-dots {
+    display: flex;
+    gap: 8px;
+  }
+}
 

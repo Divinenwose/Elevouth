@@ -7,14 +7,16 @@ import Eventhero from "../../assets/event-hero.png";
 import Timerdots from "../../assets/timer dots.png";
 import Tick from "../../assets/tick-square.png";
 import Sponsors from "../../assets/sponsors.png";
-import Mobilesponsors from "../../assets/sponsorsmob.png";
 import Partners from "../../assets/partner.png";
 import PastLeft from "../../assets/pastleft.png";
 import PastRight from "../../assets/pastright.png";
 import Contact from "../../components/Contact/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import placeholder from "../../assets/placeholder.png";
+import wiflow from "../../assets/wiflow.png";
+import asodesign from "../../assets/asodesign.png";
 
+const getSpeakersPerPage = () => (window.innerWidth <= 768 ? 1 : 3);
 
 const Events = () => {
 
@@ -55,28 +57,34 @@ const Events = () => {
         },
     ];
 
-    const scrollRef = useRef(null);
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const speakersPerPage = 3;
-    const totalSlides = Math.ceil(speakers.length / speakersPerPage);
+    const [speakersPerPage, setSpeakersPerPage] = useState(getSpeakersPerPage());
+    const [pageIndex, setPageIndex] = useState(0);
 
-    const scrollTo = (index) => {
-        if (scrollRef.current) {
-            const cardWidth = scrollRef.current.offsetWidth / speakersPerPage;
-            const scrollAmount = index * cardWidth * speakersPerPage;
-            scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
-            setCurrentSlide(index);
-        }
+    useEffect(() => {
+        const handleResize = () => {
+            const newSpeakersPerPage = getSpeakersPerPage();
+            setSpeakersPerPage(newSpeakersPerPage);
+            setPageIndex(0); // reset on resize
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const totalPages = Math.ceil(speakers.length / speakersPerPage);
+
+    const handlePrev = () => {
+        if (pageIndex > 0) setPageIndex(pageIndex - 1);
     };
 
-    const handleLeft = () => {
-        if (currentSlide > 0) scrollTo(currentSlide - 1);
+    const handleNext = () => {
+        if (pageIndex < totalPages - 1) setPageIndex(pageIndex + 1);
     };
 
-    const handleRight = () => {
-        if (currentSlide < totalSlides - 1) scrollTo(currentSlide + 1);
-    };
-
+    const currentSpeakers = speakers.slice(
+        pageIndex * speakersPerPage,
+        (pageIndex + 1) * speakersPerPage
+    );
 
     useEffect(() => {
         const target = new Date("September 19, 2025 10:00:00").getTime();
@@ -180,11 +188,11 @@ const Events = () => {
                             <div className="event-flex-one">
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>Breakout Sessions</p>
+                                    <p> 10+ Global Speakers</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>10+ Global Speakers</p>
+                                    <p>Breakout Sessions</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
@@ -194,11 +202,11 @@ const Events = () => {
                             <div className="event-flex-two">
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>Giveaways</p>
+                                    <p>1000+ Attendees</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>1000+ Attendees</p>
+                                    <p>5+ Countries</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
@@ -208,7 +216,7 @@ const Events = () => {
                             <div className="event-flex-three">
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
-                                    <p>Certificates</p>
+                                    <p>Global opportunities</p>
                                 </div>
                                 <div className="event-flex-content">
                                     <img src={Tick} alt="" />
@@ -245,55 +253,95 @@ const Events = () => {
                     <div className="sponsors-content">
                         <h4>Meet Our Sponsors & Partners</h4>
                     </div>
-                    <div className="sponsors-links">
-                        <img src={Sponsors} alt="" />
-                    </div>
-                    <div className="sponsors-links">
-                        <img src={Sponsors} alt="" />
-                    </div>
-                    <div className="sponsors-links">
-                        <img src={Sponsors} alt="" />
-                    </div>
-                    <div className="sponsors-links">
-                        <img src={Sponsors} alt="" />
-                    </div>
-                    <div className="sponsors-links">
-                        <img src={Sponsors} alt="" />
+                    <div className="sponsors-slider">
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links"><img src={wiflow} alt="" /></div>
+                        <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links"><img src={wiflow} alt="" /></div>
+                        <div className="sponsors-links aso"><img  src={asodesign} alt="" /></div>
+                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
                     </div>
                 </div>
             </section>
             <section className="voices">
                 <div className="voices-writeup">
                     <h4>Meet the Voices Shaping the Future</h4>
-                    <p>Get ready to hear from bold voices, brilliant thinkers, and game-changers redefining the future of work.</p>
+                    <p>
+                        Get ready to hear from bold voices, brilliant thinkers, and game-changers redefining the future of work.
+                    </p>
                 </div>
                 <div className="events-carousel">
-                   <button className="nav-arrow left" onClick={handleLeft} disabled={currentSlide === 0}>←</button>
-                    <div className="speaker-cards-wrapper">
-                        <div className="speaker-cards" ref={scrollRef}>
-                            {speakers.map((speaker, index) => (
-                                <div className="speaker-card" key={index}>
-                                    <div className="speaker-role">
-                                        <p>{speaker.role}</p>
-                                    </div>
-                                    <div className="speaker-image">
-                                        <img src={placeholder} alt="avatar" />
-                                    </div>
-                                    <h4 className="speaker-name">{speaker.name}</h4>
-                                    {speaker.title && <p className="speaker-title">{speaker.title}</p>}
-                                    <p className="speaker-session">
-                                        <strong className="sess">Session:</strong> {speaker.session}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
+                    <div className="arrow-btn-wrapper">
+                        <button
+                            onClick={handlePrev}
+                            disabled={pageIndex === 0}
+                            className="arrow-btn">
+                            ←
+                        </button>
                     </div>
-                    <button className="nav-arrow right" onClick={handleRight} disabled={currentSlide === totalSlides - 1}>→</button>
+                    <div className="speaker-cards">
+                        {currentSpeakers.map((speaker, index) => (
+                            <div className="speaker-card" key={index}>
+                            <div className={`speaker-role ${speaker.role === "Panelist" ? "panelist" : ""}`}>
+                                <p>{speaker.role}</p>
+                            </div>
+                            <div className="speaker-image">
+                                <img src={placeholder} alt="avatar" />
+                            </div>
+                            <h4 className="speaker-name">{speaker.name}</h4>
+                            {speaker.title && <p className="speaker-title">{speaker.title}</p>}
+                            <p className="speaker-session">
+                                <strong className="sess">Session:</strong> {speaker.session}
+                            </p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="arrow-btn-wrapper">
+                        <button
+                            onClick={handleNext}
+                            disabled={pageIndex === totalPages - 1}
+                            className="arrow-btn">
+                            →
+                        </button>
+                    </div>
                 </div>
-                <div className="carousel-indicator">
-                    {Array.from({ length: totalSlides }).map((_, i) => (
-                        <span key={i} className={`dot ${i === currentSlide ? 'active' : ''}`}></span>
+                <div className="carousel-dots-desktop-only">
+                    {Array.from({ length: totalPages }).map((_, i) => (
+                        <span
+                            key={i}
+                            className={`dot ${i === pageIndex ? "active" : ""}`}
+                            onClick={() => setPageIndex(i)}>
+
+                        </span>
                     ))}
+                </div>
+                <div className="carousel-dots-wrapper-mobile">
+                    <button
+                        onClick={handlePrev}
+                        disabled={pageIndex === 0}
+                        className="arrow-btn">
+                        ←
+                    </button>
+                    <div className="carousel-dots">
+                        {Array.from({ length: totalPages }).map((_, i) => (
+                            <span
+                            key={i}
+                            className={`dot ${i === pageIndex ? "active" : ""}`}
+                            onClick={() => setPageIndex(i)}
+                            ></span>
+                        ))}
+                    </div>
+                    <button
+                        onClick={handleNext}
+                        disabled={pageIndex === totalPages - 1}
+                        className="arrow-btn">
+                        →
+                    </button>
                 </div>
             </section>
             <section className="partners">

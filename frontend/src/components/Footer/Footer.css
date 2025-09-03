@@ -207,6 +207,11 @@
     .about-footer,
     .programs{
         text-align: right;
+        
+    }
+
+    .legal{
+        margin-left: 10px;
     }
 
 
@@ -225,5 +230,14 @@
 @media screen and (max-width:375px) {
     .footer-logo-content{
         gap: 180px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .footer-section{
+        padding: 15px;
+    }
+    .footer-logo-content{
+        gap: 170px;
     }
 }
