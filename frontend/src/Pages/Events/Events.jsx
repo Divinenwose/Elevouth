@@ -12,9 +12,19 @@ import PastLeft from "../../assets/pastleft.png";
 import PastRight from "../../assets/pastright.png";
 import Contact from "../../components/Contact/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import joeImg from "../../assets/joe.png";
+import willyImg from "../../assets/willy.png";
+import alex from "../../assets/alex.png";
+import daniel from "../../assets/daniel.png";
 import placeholder from "../../assets/placeholder.png";
 import wiflow from "../../assets/wiflow.png";
 import asodesign from "../../assets/asodesign.png";
+import meei from "../../assets/meei.png";
+import tribe from "../../assets/tribe.png";
+import aen from "../../assets/aen.png";
+import ignite from "../../assets/ignite.png";
+import awie from "../../assets/awie.png";
+import payverde from "../../assets/payverde.png";
 
 const getSpeakersPerPage = () => (window.innerWidth <= 768 ? 1 : 3);
 
@@ -26,34 +36,46 @@ const Events = () => {
 
     const speakers = [
         {
-            role: "Panelist",
-            name: "Revealing Soon",
-            title: "",
-            session: "Stay Tuned",
+            role: "Keynote Speaker",
+            name: " Joe Houghton",
+            title: "Assistant Professor & Academic Director, UCD Smurfit Graduate School of Business, Dublin",
+            session: "The Future of Talent in a Changing World: Skills, Opportunities and Technologies",
+            image: joeImg,
         },
         {
             role: "Keynote Speaker",
-            name: "Revealing Soon",
-            title: "CEO, RemoteReady Africa",
-            session: "The Future of Remote Work for African Talent",
+            name: "Willy Nsabiyumva",
+            title: "Business Consultant & Entrepreneurship Development Expert",
+            session: "Talent, Innovation & Africa’s Role in the Global Workforce",
+            image: willyImg,
         },
         {
-            role: "Workshop Host",
-            name: "Fatima Bello",
-            title: "Career Strategist, LinkedIn Africa",
-            session: "The New Rules of Hiring in Tech",
+            role: "Featured Talk",
+            name: "Toluwani Ogundele",
+            title: "Founder, Elevouth",
+            session: "Clarity First: Building a Career Roadmap that Works",
+            image: placeholder,
         },
         {
-            role: "Workshop Host",
-            name: "Fatima Bello",
-            title: "Career Strategist, LinkedIn Africa",
-            session: "The New Rules of Hiring in Tech",
+            role: "Featured Talk",
+            name: "Barinaada Alex-Iheanacho",
+            title: "Founder, Barinaada Legal",
+            session: "Workplace Law and You: Contracts, Rights & Compliance",
+            image: alex,
         },
         {
-            role: "Workshop Host",
-            name: "Fatima Bello",
-            title: "Career Strategist, LinkedIn Africa",
-            session: "The New Rules of Hiring in Tech",
+            role: "Featured Talk",
+            name: "Chika Ike-Ojukwu ",
+            title: "Global LinkedIn Coach, Content Creator & Influencer",
+            session: "Soft Skills Are the New Hard Skills: Thriving in the Global Talent Economy",
+            image: placeholder,
+        },
+        {
+            role: "Featured Talk",
+            name: "Dr. Daniel Deji Ayodele",
+            title: "Social Entrepreneur & Pan-African Leader",
+            session: "Breaking Borders: Succeeding in Global Job Markets",
+            image: daniel,
         },
     ];
 
@@ -64,7 +86,7 @@ const Events = () => {
         const handleResize = () => {
             const newSpeakersPerPage = getSpeakersPerPage();
             setSpeakersPerPage(newSpeakersPerPage);
-            setPageIndex(0); // reset on resize
+            setPageIndex(0); 
         };
 
         window.addEventListener("resize", handleResize);
@@ -255,15 +277,22 @@ const Events = () => {
                     </div>
                     <div className="sponsors-slider">
                         <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links meei"><img src={meei} alt="" /></div>
                         <div className="sponsors-links"><img src={wiflow} alt="" /></div>
                         <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
+                        <div className="sponsors-links aen"><img src={aen} alt="" /></div>
+                        <div className="sponsors-links awie"><img src={awie} alt="" /></div>
+                        <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
+                        <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
+                        <div className="sponsors-links meei"><img src={meei} alt="" /></div>
                         <div className="sponsors-links"><img src={wiflow} alt="" /></div>
                         <div className="sponsors-links aso"><img  src={asodesign} alt="" /></div>
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                        <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
+                        <div className="sponsors-links aen"><img src={aen} alt="" /></div>
+                        <div className="sponsors-links awie"><img src={awie} alt="" /></div>
+                        <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
+                        <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
                     </div>
                 </div>
             </section>
@@ -286,17 +315,17 @@ const Events = () => {
                     <div className="speaker-cards">
                         {currentSpeakers.map((speaker, index) => (
                             <div className="speaker-card" key={index}>
-                            <div className={`speaker-role ${speaker.role === "Panelist" ? "panelist" : ""}`}>
+                            <div className={`speaker-role ${speaker.role === "Featured Talk" ? "featured-talk" : ""}`}>
                                 <p>{speaker.role}</p>
                             </div>
                             <div className="speaker-image">
-                                <img src={placeholder} alt="avatar" />
+                                <img src={speaker.image} alt={speaker.name} /> 
                             </div>
                             <h4 className="speaker-name">{speaker.name}</h4>
                             {speaker.title && <p className="speaker-title">{speaker.title}</p>}
-                            <p className="speaker-session">
-                                <strong className="sess">Session:</strong> {speaker.session}
-                            </p>
+                            <div className="speaker-session">
+                                <strong className="sess">Session:</strong> <p>{speaker.session}</p>
+                            </div>
                             </div>
                         ))}
                     </div>

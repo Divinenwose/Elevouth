@@ -303,7 +303,52 @@
 
 .sponsors-links.aso {
   padding-left: 50px;  
+  object-fit: cover;
 }
+
+.sponsors-links.meei {
+  padding-left: 20px; 
+  padding-top: 20px; 
+}
+
+.sponsors-links.tribe {
+  padding-left: 40px;  
+}
+
+.sponsors-links.tribe img{
+    height: 54px;
+    border-radius: 4px;
+}
+
+.sponsors-links.aen{
+    padding-left: 50px;  
+}
+
+.sponsors-links.aen img{
+    width: 120px;
+    height: 54px;
+    border-radius: 4px;
+}
+
+.sponsors-links.awie{
+    padding-left: 45px;  
+}
+
+.sponsors-links.awie img{
+    width: 120px;
+    height: 54px;
+    border-radius: 4px;
+}
+
+.sponsors-links.payverde{
+    padding-left: 47px;
+}
+
+.sponsors-links.ignite{
+    padding-left: 28px;
+    padding-top: 46px;
+}
+
 
 .sponsors-content {
   position: absolute;
@@ -342,7 +387,7 @@
 
 .voices{
     background: #F6FBFC;
-    height: 880px;
+    height: 918px;
     padding: 40px;
     position: relative;
 }
@@ -385,25 +430,24 @@
 }
 
 .speaker-cards-wrapper {
-  width: calc(360px * 3 + 20px * 2); 
+  width: calc(340px * 3 + 10px * 2); 
   margin: 0 auto;
   position: relative;
 }
 
 .speaker-cards {
   display: flex;
-  gap: 26px;
+  gap: 10px;
   scroll-behavior: smooth;
   transition: transform 0.3s ease-in-out;
-  overflow: hidden;
 }
 
 .speaker-card {
-    min-width: 350px;
-    height: 530px;
+    width: 370px;
+    height: 650px;
     border-radius: 8px;
     border-width: 1px;
-    padding: 17px;
+    padding: 28px;
     background: #FFFFFF;
     border: 1px solid #F0F0F0;
     transition: transform 0.3s ease;
@@ -411,8 +455,9 @@
 
 .speaker-image{
     margin-top: 30px;
-    width: 315px;
-    height: 251px;
+    margin-left: 8px;
+    width: 294px;
+    height: 291px;
     border-radius: 4px;
     background: #F8F9F8;
     display: flex;
@@ -421,8 +466,8 @@
 }
 
 .speaker-image img {
-    width: 145px;
-    height: 145px;
+    width: 285px;
+    height: 290px;
 }
 
 .speaker-role {
@@ -434,19 +479,19 @@
     padding-bottom: 8px;
     padding-left: 12px;
     background: #FFFAEBE0;
-    margin-left: 190px;
+    margin-left: 178px;
 }
 
-.speaker-role.panelist{
-    width: 84px;
-    height: 32px;
+.speaker-role.featured-talk{
+    width: 111px;
+    height: 35px;
     border-radius: 9999px;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-right: 12px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-left: 12px;
     background: #FFFAEBE0;
-    margin-left: 230px;
+    margin-left: 194px;
 }
 
 
@@ -465,11 +510,12 @@
     font-family: "Arima";
     font-weight: 700;
     font-style: Bold;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 48px;
     letter-spacing: 0%;
     color: #606260;
     margin-top: 30px;
+    white-space:inherit;
 }
 
 .speaker-title {
@@ -497,11 +543,13 @@
     font-family: "Manrope";
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     letter-spacing: 0%;
     color: #111511;
     margin-top: 20px;
+    display: flex;
+    gap: 2px;
 }
 
 .arrow-btn {
@@ -534,7 +582,7 @@
   height: 8px;
   background-color: #EEEFEE;
   border-radius: 50%;
-  margin: 0 4px;
+  margin: 10px 4px;
   transition: background-color 0.3s;
 }
 
@@ -1136,9 +1184,23 @@
         padding-left: 48px;  
     }
 
+    .sponsors-links.ignite{
+        padding-top: 16px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 30px; 
+        padding-top: 8px;
+    }
+
+    .sponsors-links.meei img {
+        width: 160px;
+        height: 50px;
+    }
+
     .voices{
         padding: 18px;
-        height: 1020px;
+        height: 1090px;
     }
 
     .voices-writeup{
@@ -1174,6 +1236,12 @@
 
     .speaker-cards-wrapper {
         order: 1; 
+    }
+
+    .speaker-card{
+        width: 340px;
+        height: 650px;
+        padding: 15px;
     }
 
     .nav-arrow{
@@ -1668,9 +1736,24 @@
         padding-left: 45px;  
     }
 
+    .sponsors-links.ignite{
+        padding-top: 30px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 20px; 
+        padding-top: 18px;
+    }
+
+    .sponsors-links.meei img {
+        width: 180px;
+        height: 70px;
+    }
+
+
     .voices{
         padding: 18px;
-        height: 1020px;
+        height: 1080px;
     }
 
     .voices-writeup{
@@ -1705,6 +1788,12 @@
 
     .speaker-cards-wrapper {
         order: 1; 
+    }
+
+    .speaker-card{
+        width: 340px;
+        height: 650px;
+        padding: 15px;
     }
 
     .nav-arrow{
@@ -2194,9 +2283,23 @@
         padding-left: 18px;
     }
 
+    .sponsors-links.ignite{
+        padding-top: 30px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 20px; 
+        padding-top: 18px;
+    }
+
+    .sponsors-links.meei img {
+        width: 180px;
+        height: 70px;
+    }
+
     .voices{
         padding: 18px;
-        height: 1020px;
+        height: 1080px;
     }
 
     .voices-writeup{
@@ -2231,6 +2334,12 @@
 
     .speaker-cards-wrapper {
         order: 1; 
+    }
+
+    .speaker-card{
+        width: 340px;
+        height: 650px;
+        padding: 15px;
     }
 
     .nav-arrow{
@@ -2721,9 +2830,23 @@
         padding-left: 18px;
     }
 
+    .sponsors-links.ignite{
+        padding-top: 30px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 20px; 
+        padding-top: 18px;
+    }
+
+    .sponsors-links.meei img {
+        width: 180px;
+        height: 70px;
+    }
+
     .voices{
         padding: 20px;
-        height: 1020px;
+        height: 1080px;
     }
 
     .voices-writeup{
@@ -3247,9 +3370,23 @@
         padding-left: 18px;
     }
 
+    .sponsors-links.ignite{
+        padding-top: 30px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 20px; 
+        padding-top: 18px;
+    }
+
+    .sponsors-links.meei img {
+        width: 180px;
+        height: 70px;
+    }
+
     .voices{
         padding: 20px;
-        height: 1020px;
+        height: 1070px;
     }
 
     .voices-writeup{
@@ -3772,9 +3909,23 @@
         padding-left: 18px;
     }
 
+    .sponsors-links.ignite{
+        padding-top: 30px;
+    }
+
+    .sponsors-links.meei {
+        padding-left: 20px; 
+        padding-top: 18px;
+    }
+
+    .sponsors-links.meei img {
+        width: 180px;
+        height: 70px;
+    }
+
     .voices{
         padding: 25px;
-        height: 1020px;
+        height: 1070px;
     }
 
     .voices-writeup{
