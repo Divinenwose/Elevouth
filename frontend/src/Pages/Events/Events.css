@@ -4198,6 +4198,7 @@
 @media (max-width: 768px) {
   .speaker-cards-wrapper {
     width: 100%; 
+    overflow: hidden;
   }
 
   .speaker-cards {
@@ -4222,7 +4223,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
     gap: 12px;
   }
 
