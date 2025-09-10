@@ -58,7 +58,7 @@ const Events = () => {
         },
         {
             role: "Featured Talk",
-            name: "Barinaada Alex-Iheanacho",
+            name: <>Barinaada <br /> Alex-Iheanacho</>, 
             title: "Founder, Barinaada Legal",
             session: "Workplace Law and You: Contracts, Rights & Compliance",
             image: alex,
@@ -329,7 +329,6 @@ const Events = () => {
                             </div>
                         ))}
                     </div>
-
                     <div className="arrow-btn-wrapper">
                         <button
                             onClick={handleNext}

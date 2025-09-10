@@ -432,13 +432,13 @@
 .speaker-cards-wrapper {
   width: calc(340px * 3 + 10px * 2); 
   margin: 0 auto;
+  overflow: hidden; 
   position: relative;
 }
 
 .speaker-cards {
   display: flex;
   gap: 10px;
-  scroll-behavior: smooth;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -1244,6 +1244,14 @@
         padding: 15px;
     }
 
+    .speaker-name{
+        font-size: 30px;
+    }
+
+    .speaker-title{
+        font-size: 18px;
+    }
+
     .nav-arrow{
         order: 2;
         margin-top: auto;
@@ -1796,6 +1804,14 @@
         padding: 15px;
     }
 
+    .speaker-name{
+        font-size: 30px;
+    }
+
+    .speaker-title{
+        font-size: 18px;
+    }
+
     .nav-arrow{
         order: 2;
         margin-top: auto;
@@ -2340,6 +2356,14 @@
         width: 340px;
         height: 650px;
         padding: 15px;
+    }
+
+    .speaker-name{
+        font-size: 30px;
+    }
+
+    .speaker-title{
+        font-size: 18px;
     }
 
     .nav-arrow{
@@ -3909,19 +3933,7 @@
         padding-left: 18px;
     }
 
-    .sponsors-links.ignite{
-        padding-top: 30px;
-    }
-
-    .sponsors-links.meei {
-        padding-left: 20px; 
-        padding-top: 18px;
-    }
-
-    .sponsors-links.meei img {
-        width: 180px;
-        height: 70px;
-    }
+    
 
     .voices{
         padding: 25px;
