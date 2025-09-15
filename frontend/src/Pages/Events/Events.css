@@ -4298,7 +4298,7 @@
 
   .carousel-dots-wrapper-mobile .carousel-dots {
     display: flex;
-    gap: 8px;
+    gap: 2px;
   }
 }
 

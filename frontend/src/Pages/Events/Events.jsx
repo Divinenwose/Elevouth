@@ -15,6 +15,8 @@ import Footer from "../../components/Footer/Footer.jsx";
 import joeImg from "../../assets/joe.png";
 import willyImg from "../../assets/willy.png";
 import alex from "../../assets/alex.png";
+import samuel from "../../assets/samuel.png";
+import goodmus from "../../assets/goodmus.png";
 import Tolu from "../../assets/tolu.png";
 import Chika from "../../assets/chika.png";
 import daniel from "../../assets/daniel.png";
@@ -42,7 +44,7 @@ const Events = () => {
     const speakers = [
         {
             role: "Keynote Speaker",
-            name: " Joe Houghton",
+            name: "  Prof. Joe Houghton",
             title: "Assistant Professor & Academic Director, UCD Smurfit Graduate School of Business, Dublin",
             session: "The Future of Talent in a Changing World: Skills, Opportunities and Technologies",
             image: joeImg,
@@ -63,7 +65,7 @@ const Events = () => {
         },
         {
             role: "Featured Talk",
-            name: <>Barinaada <br /> Alex-Iheanacho</>,
+            name:  <> Barr. Barinaada <br /> Alex-Iheanacho </>,
             title: "Founder, Barinaada Legal",
             session: "Workplace Law and You: Contracts, Rights & Compliance",
             image: alex,
@@ -99,16 +101,30 @@ const Events = () => {
         {
             role: "Panel",
             name: "Victory Oghenovo",
-            title: "Founder, Womenpreneurng",
-            session: "AI & Emerging Technologies: Adapting Skills for the Future of Work",
+            title: "Founder, PM tribe",
+            session: "Resilience and Reality: What It Takes for African Talent to Compete Globally",
             image: victory,
         },
         {
             role: "Guest Speaker",
             name: "Alice Awobite-Joshua",
             title: "Founder, RemoteWorkPadi & ATC Professional Academy",
-            session: "Web3 and the Future of Work: Decentralization, Opportunity & Innovation",
+            session: "Personal Branding for Global Opportunities",
             image: alice,
+        },
+        {
+            role: "Guest Speaker",
+            name: "Samuel Oghenejaboh",
+            title: "Founder, Wiflow Group & MyMuute",
+            session: "The Media Advantage: Leveraging Digital Platforms to unlock Global Opportunites",
+            image: samuel,
+        },
+        {
+            role: "Guest Speaker",
+            name: "Dr. Adekunle Badmus",
+            title: "Founder &CEO, Goodmus learning center Ltd.",
+            session: "Personal Branding for Global Opportunities",
+            image: goodmus,
         },
     ];
 
