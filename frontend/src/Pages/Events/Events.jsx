@@ -15,8 +15,13 @@ import Footer from "../../components/Footer/Footer.jsx";
 import joeImg from "../../assets/joe.png";
 import willyImg from "../../assets/willy.png";
 import alex from "../../assets/alex.png";
+import Tolu from "../../assets/tolu.png";
+import Chika from "../../assets/chika.png";
 import daniel from "../../assets/daniel.png";
-import placeholder from "../../assets/placeholder.png";
+import success from "../../assets/success.png";
+import john from "../../assets/john.png";
+import victory from "../../assets/victory.png";
+import alice from "../../assets/alice.png";
 import wiflow from "../../assets/wiflow.png";
 import asodesign from "../../assets/asodesign.png";
 import meei from "../../assets/meei.png";
@@ -54,11 +59,11 @@ const Events = () => {
             name: "Toluwani Ogundele",
             title: "Founder, Elevouth",
             session: "Clarity First: Building a Career Roadmap that Works",
-            image: placeholder,
+            image: Tolu,
         },
         {
             role: "Featured Talk",
-            name: <>Barinaada <br /> Alex-Iheanacho</>, 
+            name: <>Barinaada <br /> Alex-Iheanacho</>,
             title: "Founder, Barinaada Legal",
             session: "Workplace Law and You: Contracts, Rights & Compliance",
             image: alex,
@@ -68,7 +73,7 @@ const Events = () => {
             name: "Chika Ike-Ojukwu ",
             title: "Global LinkedIn Coach, Content Creator & Influencer",
             session: "Soft Skills Are the New Hard Skills: Thriving in the Global Talent Economy",
-            image: placeholder,
+            image: Chika,
         },
         {
             role: "Featured Talk",
@@ -76,6 +81,34 @@ const Events = () => {
             title: "Social Entrepreneur & Pan-African Leader",
             session: "Breaking Borders: Succeeding in Global Job Markets",
             image: daniel,
+        },
+        {
+            role: "Featured Talk",
+            name: "Success Ola-Ojo",
+            title: "Community Builder & Blockchain Educator",
+            session: "Web3 and the Future of Work: Decentralization, Opportunity & Innovation",
+            image: success,
+        },
+        {
+            role: "Panel",
+            name: "John Okeke ",
+            title: "Developer, Product Builder & Community Leader",
+            session: "Talent and Technology: Where Are the Jobs of the Future?",
+            image: john,
+        },
+        {
+            role: "Panel",
+            name: "Victory Oghenovo",
+            title: "Founder, Womenpreneurng",
+            session: "AI & Emerging Technologies: Adapting Skills for the Future of Work",
+            image: victory,
+        },
+        {
+            role: "Guest Speaker",
+            name: "Alice Awobite-Joshua",
+            title: "Founder, RemoteWorkPadi & ATC Professional Academy",
+            session: "Web3 and the Future of Work: Decentralization, Opportunity & Innovation",
+            image: alice,
         },
     ];
 
@@ -85,13 +118,18 @@ const Events = () => {
     useEffect(() => {
         const handleResize = () => {
             const newSpeakersPerPage = getSpeakersPerPage();
-            setSpeakersPerPage(newSpeakersPerPage);
-            setPageIndex(0); 
+            setSpeakersPerPage(prev => {
+                if (prev !== newSpeakersPerPage) {
+                    setPageIndex(0); 
+                }
+                return newSpeakersPerPage;
+            });
         };
 
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
 
     const totalPages = Math.ceil(speakers.length / speakersPerPage);
 
@@ -134,7 +172,7 @@ const Events = () => {
         return () => clearInterval(interval);
     }, []);
 
-    
+
     return (
         <div className="events-container">
             <section className="evnt-top">
@@ -287,7 +325,7 @@ const Events = () => {
                         <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
                         <div className="sponsors-links meei"><img src={meei} alt="" /></div>
                         <div className="sponsors-links"><img src={wiflow} alt="" /></div>
-                        <div className="sponsors-links aso"><img  src={asodesign} alt="" /></div>
+                        <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
                         <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
                         <div className="sponsors-links aen"><img src={aen} alt="" /></div>
                         <div className="sponsors-links awie"><img src={awie} alt="" /></div>
@@ -315,17 +353,17 @@ const Events = () => {
                     <div className="speaker-cards">
                         {currentSpeakers.map((speaker, index) => (
                             <div className="speaker-card" key={index}>
-                            <div className={`speaker-role ${speaker.role === "Featured Talk" ? "featured-talk" : ""}`}>
-                                <p>{speaker.role}</p>
-                            </div>
-                            <div className="speaker-image">
-                                <img src={speaker.image} alt={speaker.name} /> 
-                            </div>
-                            <h4 className="speaker-name">{speaker.name}</h4>
-                            {speaker.title && <p className="speaker-title">{speaker.title}</p>}
-                            <div className="speaker-session">
-                                <strong className="sess">Session:</strong> <p>{speaker.session}</p>
-                            </div>
+                                <div className={`speaker-role ${speaker.role === "Featured Talk" ? "featured-talk" : speaker.role === "Panel" ? "panel" : ""}`}>
+                                    <p>{speaker.role}</p>
+                                </div>
+                                <div className="speaker-image">
+                                    <img src={speaker.image} alt={speaker.name} />
+                                </div>
+                                <h4 className="speaker-name">{speaker.name}</h4>
+                                {speaker.title && <p className="speaker-title">{speaker.title}</p>}
+                                <div className="speaker-session">
+                                    <strong className="sess">Session:</strong> <p>{speaker.session}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -358,9 +396,9 @@ const Events = () => {
                     <div className="carousel-dots">
                         {Array.from({ length: totalPages }).map((_, i) => (
                             <span
-                            key={i}
-                            className={`dot ${i === pageIndex ? "active" : ""}`}
-                            onClick={() => setPageIndex(i)}
+                                key={i}
+                                className={`dot ${i === pageIndex ? "active" : ""}`}
+                                onClick={() => setPageIndex(i)}
                             ></span>
                         ))}
                     </div>
