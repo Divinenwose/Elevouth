@@ -15,6 +15,8 @@ import Footer from "../../components/Footer/Footer.jsx";
 import joeImg from "../../assets/joe.png";
 import willyImg from "../../assets/willy.png";
 import alex from "../../assets/alex.png";
+import jimoh from "../../assets/jimoh.png";
+import osinachi from "../../assets/osinachi.png";
 import samuel from "../../assets/samuel.png";
 import goodmus from "../../assets/goodmus.png";
 import Tolu from "../../assets/tolu.png";
@@ -50,18 +52,18 @@ const Events = () => {
             image: joeImg,
         },
         {
-            role: "Keynote Speaker",
-            name: "Willy Nsabiyumva",
-            title: "Business Consultant & Entrepreneurship Development Expert",
-            session: "Talent, Innovation & Africa’s Role in the Global Workforce",
-            image: willyImg,
-        },
-        {
             role: "Featured Talk",
             name: "Toluwani Ogundele",
             title: "Founder, Elevouth",
             session: "Clarity First: Building a Career Roadmap that Works",
             image: Tolu,
+        },
+        {
+            role: "Speaker",
+            name: "Willy Nsabiyumva",
+            title: "Business Consultant & Entrepreneurship Development Expert",
+            session: "Talent, Innovation & Africa’s Role in the Global Workforce",
+            image: willyImg,
         },
         {
             role: "Featured Talk",
@@ -94,7 +96,7 @@ const Events = () => {
         {
             role: "Panel",
             name: "John Okeke ",
-            title: "Developer, Product Builder & Community Leader",
+            title: "Founder, Sandlip. Developer, Product Builder & Community Leader",
             session: "Talent and Technology: Where Are the Jobs of the Future?",
             image: john,
         },
@@ -123,8 +125,22 @@ const Events = () => {
             role: "Guest Speaker",
             name: "Dr. Adekunle Badmus",
             title: "Founder &CEO, Goodmus learning center Ltd.",
-            session: "Personal Branding for Global Opportunities",
+            session: "From job seeker to job creator : Entrepreneurship & the future of work",
             image: goodmus,
+        },
+        {
+            role: "Guest Speaker",
+            name: "Saheed Jimoh",
+            title: "Co-Founder & CEO, PayVerde",
+            session: "From job seeker to job creator : Entrepreneurship & the future of work",
+            image: jimoh,
+        },
+        {
+            role: "Guest Speaker",
+            name: "Osinach Emmanuel",
+            title: "CIPD, ACIPM, HRPL",
+            session: "What Employers & Talents Really Want: The Truth About Hiring & Recruitment",
+            image: osinachi,
         },
     ];
 
@@ -369,7 +385,7 @@ const Events = () => {
                     <div className="speaker-cards">
                         {currentSpeakers.map((speaker, index) => (
                             <div className="speaker-card" key={index}>
-                                <div className={`speaker-role ${speaker.role === "Featured Talk" ? "featured-talk" : speaker.role === "Panel" ? "panel" : ""}`}>
+                                <div className={`speaker-role ${speaker.role === "Featured Talk" ? "featured-talk" : speaker.role === "Speaker" ? "speaker" : speaker.role === "Panel" ? "panel" : ""}`}>
                                     <p>{speaker.role}</p>
                                 </div>
                                 <div className="speaker-image">

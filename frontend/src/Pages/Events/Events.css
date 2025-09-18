@@ -506,6 +506,13 @@
     margin-left: 194px;
 }
 
+.speaker-role.speaker{
+    width: 77px;
+    height: 35px;
+    margin-left: 225px;
+    padding-top: 10px ;
+}
+
 
 .speaker-role p{
     font-family: "Manrope";
@@ -4285,7 +4292,7 @@
     background: #FACB33;
     border: none;
     width: 40px;
-    height: 40px;
+    height: 39px;
     border-radius: 4px;
     cursor: pointer;
     padding: 4px;
@@ -4298,7 +4305,6 @@
 
   .carousel-dots-wrapper-mobile .carousel-dots {
     display: flex;
-    gap: 2px;
   }
 }
 
