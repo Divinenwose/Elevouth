@@ -294,7 +294,7 @@
 .sponsors-links{
     width: 220px;
     height: 129px;
-    padding-left: 14px;
+    padding-left: 10px;
     padding-top: 38px;
     border-radius: 16px;
     background: #FDFCF8;
@@ -349,6 +349,20 @@
     padding-top: 46px;
 }
 
+.sponsors-links.supashot{
+  padding-left: 40px; 
+  padding-top: 42px; 
+}
+
+.sponsors-links.supadao{
+  padding-left: 20px; 
+  padding-top: 35px; 
+}
+
+.sponsors-links.ao{
+  padding-left: 70px;  
+}
+
 
 .sponsors-content {
   position: absolute;
@@ -362,15 +376,23 @@
 }
 
 .sponsors-slider {
+  position: relative;
+  width: 100%;
+}
+
+.sponsors-track {
   display: flex;
   gap: 15px;
+  width: max-content;
   animation: scroll 30s linear infinite;
 }
 
+ 
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
 
 .sponsors-content h4{
     font-family: "Manrope";
@@ -1216,6 +1238,16 @@
         height: 50px;
     }
 
+    .sponsors-links.supashot{
+        padding-left: 40px; 
+        padding-top: 10px; 
+    }
+
+    .sponsors-links.supadao{
+        padding-top: 6px; 
+    }
+
+
     .voices{
         padding: 18px;
         height: 980px;
@@ -1784,6 +1816,16 @@
         padding-left: 20px; 
         padding-top: 18px;
     }
+    
+    .sponsors-links.supashot{
+        padding-left: 40px; 
+        padding-top: 24px; 
+    }
+
+    .sponsors-links.supadao{
+        padding-top: 18px; 
+    }
+
 
     .sponsors-links.meei img {
         width: 180px;
@@ -2359,6 +2401,16 @@
         height: 70px;
     }
 
+    .sponsors-links.supashot{
+        padding-left: 40px; 
+        padding-top: 24px; 
+    }
+
+    .sponsors-links.supadao{
+        padding-top: 18px; 
+    }
+
+
     .voices{
         padding: 18px;
         height: 980px;
@@ -2929,6 +2981,16 @@
         height: 70px;
     }
 
+    .sponsors-links.supashot{
+        padding-left: 40px; 
+        padding-top: 24px; 
+    }
+
+    .sponsors-links.supadao{
+        padding-top: 18px; 
+    }
+
+
     .voices{
         padding: 20px;
         height: 980px;
@@ -3468,6 +3530,16 @@
         width: 180px;
         height: 70px;
     }
+
+    .sponsors-links.supashot{
+        padding-left: 40px; 
+        padding-top: 24px; 
+    }
+
+    .sponsors-links.supadao{
+        padding-top: 18px; 
+    }
+
 
     .voices{
         padding: 20px;

@@ -32,6 +32,9 @@ import meei from "../../assets/meei.png";
 import tribe from "../../assets/tribe.png";
 import aen from "../../assets/aen.png";
 import ignite from "../../assets/ignite.png";
+import ao from "../../assets/a.png";
+import supadao from "../../assets/supadao.png";
+import supashop from "../../assets/supashop.png";
 import awie from "../../assets/awie.png";
 import payverde from "../../assets/payverde.png";
 
@@ -346,23 +349,32 @@ const Events = () => {
                         <h4>Meet Our Sponsors & Partners</h4>
                     </div>
                     <div className="sponsors-slider">
-                        <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
-                        <div className="sponsors-links meei"><img src={meei} alt="" /></div>
-                        <div className="sponsors-links"><img src={wiflow} alt="" /></div>
-                        <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
-                        <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
-                        <div className="sponsors-links aen"><img src={aen} alt="" /></div>
-                        <div className="sponsors-links awie"><img src={awie} alt="" /></div>
-                        <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
-                        <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
-                        <div className="sponsors-links meei"><img src={meei} alt="" /></div>
-                        <div className="sponsors-links"><img src={wiflow} alt="" /></div>
-                        <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
-                        <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
-                        <div className="sponsors-links aen"><img src={aen} alt="" /></div>
-                        <div className="sponsors-links awie"><img src={awie} alt="" /></div>
-                        <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
-                        <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
+                        <div className="sponsors-track">
+                            <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                            <div className="sponsors-links meei "><img src={meei} alt="" /></div>
+                            <div className="sponsors-links"><img src={wiflow} alt="" /></div>
+                            <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
+                            <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
+                            <div className="sponsors-links aen"><img src={aen} alt="" /></div>
+                            <div className="sponsors-links awie"><img src={awie} alt="" /></div>
+                            <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
+                            <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
+                            <div className="sponsors-links ao"><img src={ao} alt="" /></div>
+                            <div className="sponsors-links supadao"><img src={supadao} alt="" /></div>
+                            <div className="sponsors-links supashot"><img src={supashop} alt="" /></div>
+                            <div className="sponsors-links"><img src={Sponsors} alt="" /></div>
+                            <div className="sponsors-links meei "><img src={meei} alt="" /></div>
+                            <div className="sponsors-links"><img src={wiflow} alt="" /></div>
+                            <div className="sponsors-links aso"><img src={asodesign} alt="" /></div>
+                            <div className="sponsors-links tribe"><img src={tribe} alt="" /></div>
+                            <div className="sponsors-links aen"><img src={aen} alt="" /></div>
+                            <div className="sponsors-links awie"><img src={awie} alt="" /></div>
+                            <div className="sponsors-links payverde"><img src={payverde} alt="" /></div>
+                            <div className="sponsors-links ignite"><img src={ignite} alt="" /></div>
+                            <div className="sponsors-links ao"><img src={ao} alt="" /></div>
+                            <div className="sponsors-links supadao"><img src={supadao} alt="" /></div>
+                            <div className="sponsors-links supashot"><img src={supashop} alt="" /></div>
+                        </div>
                     </div>
                 </div>
             </section>
