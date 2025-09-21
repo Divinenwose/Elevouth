@@ -60,15 +60,14 @@
   cursor: pointer;
 }
 
-.faq-carousel {
+.faq-section .faq-carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   margin-top: 60px;
 }
 
-.arrow-btn {
+.faq-section  .arrow-btn {
   background: #FACB33;
   font-size: 24px;
   border: none;
@@ -81,19 +80,19 @@
   border-width: 0.5px;
 }
 
-.arrow-btn:disabled {
+.faq-section .arrow-btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
   background: transparent;
 }
 
-.faq-cards {
+.faq-section .faq-cards {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   scroll-behavior: smooth; 
 }
 
-.faq-card {
+.faq-section .faq-card {
   background: #FEFCF9;
   border-radius: 10px;
   width: 400px;
@@ -107,12 +106,12 @@
   flex-shrink: 0;
 }
 
-.faq-card:hover {
+.faq-section .faq-card:hover {
   background: #EDF9E6;
   box-shadow: -5px 10px 20px 0px #1049111A;
 }
 
-.faq-number {
+.faq-section .faq-number {
   font-family: "Arima";
   font-weight: 400;
   font-style: Regular;
@@ -123,11 +122,11 @@
   color: #895B12;
 }
 
-.faq-card:hover .faq-number {
+.faq-section .faq-card:hover .faq-number {
   font-size: 32px;
 }
 
-.faq-question {
+.faq-section .faq-question {
   font-family: "Manrope";
   font-weight: 400;
   font-style: normal;
@@ -139,17 +138,16 @@
   transition: transform 0.3s ease;
 }
 
-.faq-card:hover .faq-question {
+.faq-section .faq-card:hover .faq-question {
   transform: translateY(-30px);
 }
 
-.faq-answer {
+.faq-section .faq-answer {
   font-size: 16px;
   color: #444;
   margin-top: 22px;
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   font-family: "Manrope";
   font-weight: 400;
   font-style: normal;
@@ -158,18 +156,18 @@
   transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
 }
 
-.faq-card:hover .faq-answer {
+.faq-section .faq-card:hover .faq-answer {
   opacity: 1;
   max-height: 120px;
   transform: translateY(10px);
 }
 
-.faq-dots {
+.faq-section .faq-dots {
   margin-top: 20px;
   text-align: center;
 }
 
-.faq-dots .dot {
+.faq-section .faq-dots .dot {
   display: inline-block;
   height: 10px;
   width: 10px;
@@ -180,7 +178,7 @@
   transition: 0.3s ease;
 }
 
-.faq-dots .dot.active {
+.faq-section .faq-dots .dot.active {
   background: #F9A620;
 }
 
@@ -281,18 +279,18 @@
 
   .faq-question {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: transform 0.3s ease;
   }
 
   .faq-card:hover .faq-question {
-    transform: translateY(-30px);
+    transform: translateY(-8px);
   }
 
   .faq-answer {
     font-size: 16px;
     color: #444;
-    margin-top: 10px;
+    margin-top: 35px;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
