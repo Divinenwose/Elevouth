@@ -66,9 +66,9 @@ const Navbar = () => {
                     <a href="#">Programs <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
                     </ul>
                 </li>
 
@@ -86,9 +86,9 @@ const Navbar = () => {
                     <a href="#">For Individuals <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener"onClick={() => setMenuOpen(false)}>The Academy</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
                     </ul>
                 </li>
 
@@ -96,9 +96,9 @@ const Navbar = () => {
                     <a href="#">For Companies <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
-                        <li><a href="#" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
                     </ul>
                 </li>
                 <li className="mobile-btn">
