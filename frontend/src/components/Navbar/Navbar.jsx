@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Navbar.css';
-import { Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
 import MenuIcon from "../../assets/menu.png";
-import CloseIcon from "../../assets/close-circle.png"; 
+import CloseIcon from "../../assets/close-circle.png";
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -17,14 +17,14 @@ const Navbar = () => {
 
     const handleLinkClick = (link) => {
         setActiveLink(link);
-        setMenuOpen(false); 
+        setMenuOpen(false);
     };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-        if (navRef.current && !navRef.current.contains(event.target)) {
-            setMenuOpen(false);
-        }
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
         };
 
         document.addEventListener("mousedown", handleClickOutside);
@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
                 <img src={menuOpen ? CloseIcon : MenuIcon} alt="Menu Toggle Icon" />
             </div>
-            
+
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li className="nav-item">
                     <Link
@@ -54,14 +54,14 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                     <Link
-                        to="/aboutUs"
-                        className={activeLink === "aboutUs" ? "active" : ""}
-                        onClick={() => handleLinkClick("aboutUs")}
+                        to="/about"
+                        className={activeLink === "about" ? "active" : ""}
+                        onClick={() => handleLinkClick("about")}
                     >
                         About Us
                     </Link>
                 </li>
-                
+
                 <li className="nav-item dropdown">
                     <a href="#">Programs <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
@@ -74,18 +74,19 @@ const Navbar = () => {
 
                 <li className="nav-item">
                     <Link
-                        to="/events"
-                        className={activeLink === "events" ? "active" : ""}
-                        onClick={() => handleLinkClick("events")}
+                        to="#"
+                        className="disabled-link"
+                        onClick={(e) => e.preventDefault()} 
                     >
                         Events
                     </Link>
                 </li>
 
+
                 <li className="nav-item dropdown">
                     <a href="#">For Individuals <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
-                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener"onClick={() => setMenuOpen(false)}>The Academy</a></li>
+                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>

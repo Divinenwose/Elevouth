@@ -1,0 +1,283 @@
+.about-content {
+    background: #FEFCF9;
+    height: 850px
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.about-flex-left img {
+    width: 642px;
+    height: 643px;
+}
+
+.about-flex-right h2 {
+    font-family: "Arima";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 68px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    color: #606260;
+}
+
+.about-flex-right p {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #111511;
+    width: 690px;
+}
+
+.about-profile {
+    background: #F6FCF2;
+    height: 764px;
+    padding: 40px;
+}
+
+.about-profile-flex {
+    display: flex;
+    gap: 75px;
+}
+
+.flex-profile-writeup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.flex-profile-writeup p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: #111511;
+    width: 700px;
+}
+
+.flex-profile-image img {
+    width: 587px;
+}
+
+.mission {
+    background: #FAFCFAF9;
+    height: 400px;
+    padding: 40px;
+}
+
+.mission-cards {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mission-cards h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #606260;
+}
+
+.mission-cards p {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #111511;
+}
+
+.our-mission {
+    width: 736px;
+    height: 302px;
+    border-radius: 8px;
+    padding: 40px;
+    background: #C5E3EC;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.our-vision {
+    width: 736px;
+    height: 302px;
+    border-radius: 8px;
+    padding: 40px;
+    background: #FDE3BA;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.values {
+    background: #fff;
+    height: 793px;
+    padding: 40px;
+}
+
+.core-values {
+    margin-top: 70px;
+}
+
+.core-values h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #606260;
+    text-align: center;
+}
+
+.values-card {
+    display: flex;
+    gap: 25px;
+    margin-top: 110px;
+}
+
+.card-one,
+.card-three {
+    width: 364px;
+    height: 414px;
+    border-radius: 16px;
+    border: 1.4px dashed #47595F;
+    transform: rotate(6deg);
+    padding: 16px;
+}
+
+.card-two,
+.card-four {
+    width: 364px;
+    height: 414px;
+    border-radius: 16px;
+    border: 1.4px dashed #47595F;
+    transform: rotate(-6deg);
+    padding: 16px;
+}
+
+.card-one h2,
+.card-two h2,
+.card-three h2,
+.card-four h2 {
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    white-space: nowrap;
+}
+
+.card-one h2 {
+    margin-top: 167px;
+}
+
+.card-two h2 {
+    margin-top: 137px;
+}
+
+.card-three h2 {
+    margin-top: 117px;
+}
+
+.card-four h2 {
+    margin-top: 117px;
+}
+
+.card-one p,
+.card-two p,
+.card-three p,
+.card-four p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #414441;
+    margin-top: 20px;
+}
+
+.impact {
+    height: 560px;
+    padding: 40px;
+    background: #F6FBFC;
+}
+
+.impact-container h2 {
+    font-family: "Arima";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 68px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #606260;
+    margin-top: 25px;
+}
+
+.impact-cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 90px;
+}
+
+.im-card-one,
+.im-card-two,
+.im-card-three,
+.im-card-four {
+    width: 357px;
+    height: 223px;
+    border-radius: 8px;
+    border-width: 0.3px;
+    padding: 40px;
+    background-color: #fff;
+    border: 0.3px solid #D5D6D5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.im-card-one h2,
+.im-card-two h2,
+.im-card-three h2,
+.im-card-four h2 {
+    font-family: "Arima";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 7%;
+    color: #424342;
+    margin-top: 30px;
+}
+
+.im-card-one p,
+.im-card-two p,
+.im-card-three,
+.im-card-four p{
+    font-family: "Playfair";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:#111511 ;
+}

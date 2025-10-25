@@ -24,7 +24,7 @@ const HomePage = () => {
       <Gets />
       <Teams />
       <Story />
-      <Submit />
+      {/* <Submit /> */}
       <Grow />
       <Candidates />
       <Path />
