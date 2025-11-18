@@ -104,7 +104,7 @@ const Navbar = () => {
                 </li>
                 <li className="mobile-btn">
                     <Link
-                        to={isOnJoinHubPage ? "#" : "/join-the-hub"}
+                        to={isOnJoinHubPage ? "#" : "/hub"}
                         className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
                         onClick={(e) => {
                             if (isOnJoinHubPage) e.preventDefault();
@@ -117,7 +117,7 @@ const Navbar = () => {
             </ul>
             <div className="nav-btn-container">
                 <Link
-                    to={isOnJoinHubPage ? "#" : "/join-the-hub"}
+                    to={isOnJoinHubPage ? "#" : "/hub"}
                     className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
                     onClick={(e) => isOnJoinHubPage && e.preventDefault()}
                 >
