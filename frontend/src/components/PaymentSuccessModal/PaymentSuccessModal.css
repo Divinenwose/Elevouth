@@ -21,116 +21,40 @@
     padding-left: 40px;
     border-width: 1px;
     box-shadow: 0px 2px 50px 7px #0B280B14;
+    top: 173px;
+    left: 393px;
+}
+
+.close-modal{
+    display: flex;
+    gap: 485px;
 }
 
 .close-modal img {
     cursor: pointer;
 }
 
-.top-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom-width: 1px;
-    padding-top: 14px;
-    padding-right: 16px;
-    padding-bottom: 14px;
-    padding-left: 16px;
-    border-bottom: 1px solid #F5F6F5
-}
 
-.top-container h2 {
-    font-family: "Arima";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: #606260;
-}
-
-.modal-content {
-    padding-top: 24px;
-    padding-bottom: 24px;
+.success-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 70px;
 }
 
-.wire {
-    width: 422px;
-    height: 140px;
-    margin-inline: auto;
-}
-
-.modal-content p {
-    font-family: "Manrope";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: #606260;
-}
-
-.modal-content ul {
-    list-style: none;
-}
-
-.modal-content li {
-    font-family: "Manrope";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #111511;
-    padding-block: 3px;
-}
-
-.modal-dots {
-    width: 10px;
-    height: 10px;
-    padding-right: 2px;
-}
-
-.modal-btn {
+.succ {
     display: flex;
-    gap: 12px;
-    margin-top: 5px;
-}
-
-.modal-join {
-    width: 50%;
-    height: 40px;
-    padding-inline: 80px;
-    padding-block: 8px;
-    border-radius: 4px;
-    border-width: 1px;
-    border: 1px solid #406D41;
-    font-family: "Manrope";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: #104911;
-}
-
-.modal-enroll {
-    width: 50%;
-    height: 40px;
-    padding-inline: 90px;
-    border-radius: 4px;
-    background: #104911;
-    font-family: "Manrope";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: #FAFCFA;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.succ h2 {
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #555555;
 }

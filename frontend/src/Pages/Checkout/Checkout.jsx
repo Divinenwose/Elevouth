@@ -34,15 +34,10 @@ const Checkout = () => {
     const finalTotal = cartTotal - discount;
 
 
-    const amountToPay =
-        paymentPlan === "part"
-            ? course.price / 2
-            : course.price;
-
     const flutterConfig = {
         public_key: import.meta.env.VITE_FLW_PUBLIC_KEY,
-        tx_ref: Date.now(),
-        amount: amountToPay,
+        tx_ref: Date.now().toString(),
+        amount: finalTotal,
         currency: "NGN",
         payment_options: "card,banktransfer,ussd",
         customer: {
@@ -68,18 +63,18 @@ const Checkout = () => {
 
         handleFlutterPayment({
             callback: async (response) => {
-                if (response.status === "successful") {
+                console.log("Flutterwave response:", response);
+
+                if (response.status === "successful" || response.status === "completed") {
                     setVerifying(true);
 
                     try {
                         const payload = {
                             transaction_id: response.transaction_id,
-                            expectedAmount: amountToPay,
-                            course: course || {},
-                            contact: contact || {},
+                            expectedAmount: finalTotal,
+                            course,
+                            contact,
                         };
-
-                        console.log("Sending payload:", payload);
 
                         const res = await fetch("http://localhost:5000/api/payment/verify", {
                             method: "POST",
@@ -106,9 +101,6 @@ const Checkout = () => {
                     alert("Payment not completed");
                     closePaymentModal();
                 }
-            },
-            onClose: () => {
-                console.log("Payment modal closed");
             },
         });
     };
@@ -279,14 +271,13 @@ const Checkout = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Success Modal */}
             <PaymentSuccessModal
-                show={showSuccessModal}
+                open={showSuccessModal}   
                 onClose={() => setShowSuccessModal(false)}
                 course={course}
                 payment={paymentInfo}
             />
+
         </div>
     );
 };

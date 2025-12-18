@@ -1,21 +1,30 @@
+import { useNavigate } from "react-router-dom";
 import "./PaymentSuccessModal.css";
+import succ from "../../assets/succ.png";
+import close from "../../assets/close.png";
 
+const PaymentSuccessModal = ({ open }) => {
+  const navigate = useNavigate();
 
-
-const PaymentSuccessModal = ({ open, onClose }) => {
   if (!open) return null;
+
+  const handleClose = () => {
+    // Redirect to the Academy page
+    navigate("/academy");
+  };
 
   return (
     <div className="payment-overlay">
       <div className="payment-box">
-        <div className="top-container">
-          <span className="close-modal" onClick={onClose}>
-            <img src={exit} alt="" />
-          </span>
-        </div>
         <div className="success-content">
-          <img src="" alt="" />
-          <p>Successful Purchase</p>
+          <span className="close-modal" onClick={handleClose}>
+            <div></div>
+            <img src={close} alt="Close" />
+          </span>
+          <div className="succ">
+            <img src={succ} alt="Success" className="success-img" />
+            <h2>Successful Purchase</h2>
+          </div>
         </div>
       </div>
     </div>
