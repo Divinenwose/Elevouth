@@ -1,0 +1,307 @@
+.academy-hero {
+    background: #FEFCF9;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.academy-hero h2 {
+    font-family: "Arima";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #555555;
+    margin-top: 90px;
+}
+
+.tech {
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #179716;
+}
+
+.creative {
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #E3971D;
+}
+
+.leadership {
+    font-family: "Arima";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #CE1312;
+}
+
+.academy-hero p {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #333333;
+}
+
+.course {
+    width: 194px;
+    height: 48px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    background: #104911;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FAFCFA;
+}
+
+.pictures {
+    height: 440px;
+    background: #E7EDE7;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.picture-flex {
+    width: 485px;
+    height: 390px;
+    border-radius: 24px;
+    padding: 16px;
+    background: #FFFFFF;
+}
+
+.pictures img {
+    width: 383px;
+    height: 358px;
+    border-radius: 8px;
+}
+
+.academy-content {
+    height: 1089px;
+    background: #FAFCFAF9;
+    padding: 40px;
+}
+
+.academy-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.academy-text h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #606260;
+    margin-top: 30px;
+}
+
+.academy-text p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #111511;
+}
+
+.academy-images {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.academy-image {
+    width: 736px;
+    height: 732px;
+    border-radius: 24px;
+    padding: 16px;
+    background: #FFFFFF;
+}
+
+.academy-image-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.academy4 {
+    width: 604px;
+    height: 456px;
+    border-radius: 8px;
+    border-width: 0.5px;
+}
+
+.academy-image-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.academy-image-text h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    color: #414441;
+}
+
+.academy-image-text p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #606260;
+}
+
+.extech {
+    width: 196px;
+    height: 48px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    background: #104911;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FAFCFA;
+}
+
+.academy-box {
+    width: 604px;
+    height: 357px;
+    border-radius: 24px;
+    padding: 16px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+}
+
+.academy-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.academy-box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.academy-img img {
+    border: 0.5px solid #E3971D;
+    width: 324px;
+    height: 325px;
+    border-radius: 8px;
+    border-width: 0.5px;
+}
+
+.academy-info h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #414441;
+    margin-top: 20px;
+}
+
+.academy-info p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #606260;
+}
+
+.extech1 {
+    width: 224px;
+    height: 48px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    background: #104911;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FAFCFA;
+    white-space: nowrap;
+}
+
+.academy-box-info h2 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #414441;
+    margin-top: 10px;
+}
+
+.academy-box-info p {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #606260;
+}

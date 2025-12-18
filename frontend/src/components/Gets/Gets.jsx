@@ -9,7 +9,7 @@ const Gets = () => {
                 <div className="gets-writeup-container">
                     <h2>Learn What Gets You Hired</h2>
                     <div className="gets-write-up-container-links">
-                        <a href="#">Explore Skill Tracks</a>
+                        <a href="https://elevouthacademyc2.lovable.app" target="blank" rel="noopener noreferrer">Explore Skill Tracks</a>
                     </div>
                 </div>
                 <div className="right-writeup">

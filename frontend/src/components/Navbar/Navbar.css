@@ -20,18 +20,6 @@
   gap: 5px;
 }
 
-.nav-logo-container .logo {
-  width: 26px;
-  height: 26px;
-}
-
-.nav-logo-container h1 {
-  color: #104911;
-  font-size: 24px;
-  font-family: "Manrope";
-  font-weight: 800;
-  margin: 0;
-}
 
 .nav-links {
   list-style: none;
@@ -112,7 +100,7 @@
   border-radius: 4px;
   background-color: #104911;
   cursor: pointer;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-weight: 500;
   font-size: 16px;
   color: white;

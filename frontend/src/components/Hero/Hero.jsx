@@ -15,7 +15,10 @@ const slides = [
     imageText:
       "Elevouth guides you from uncertainty to career clarity, real-world skills, and meaningful work—GLOBALLY.",
     buttons: [
-      { text: "Explore Skill Tracks", link: "#get-started" },
+      {
+        text: "Explore Skill Tracks",
+        link: "https://elevouthacademyc2.lovable.app"
+      },
       { text: "Hire Talent", link: "#learn-more" },
     ],
   },
@@ -30,7 +33,10 @@ const slides = [
       "We prepare talents with more than just training—they gain real-world skills, project experience, and career coaching.",
     buttons: [
       { text: "Hire Talent", link: "#join" },
-      { text: "Explore Skill Tracks", link: "#programs" },
+      {
+        text: "Explore Skill Tracks",
+        link: "https://elevouthacademyc2.lovable.app"
+      },
     ],
   },
 ];
@@ -40,11 +46,11 @@ const Hero = () => {
   const currentSlide = slides[current];
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrent((prev) => (prev + 1) % slides.length);
-  }, 10000); 
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 10000);
 
-  return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
 
@@ -59,7 +65,7 @@ const Hero = () => {
             </h1>
             <div className="hero-buttons">
               {currentSlide.buttons.map((btn, index) => (
-                <a key={index} href={btn.link} className={`hero-btn ${index === 1 ? "hero-btn-alt" : ""}`}>
+                <a key={index} href={btn.link} target="blank" rel="noopener noreferrer" className={`hero-btn ${index === 1 ? "hero-btn-alt" : ""}`}>
                   {btn.text}
                 </a>
               ))}

@@ -5,6 +5,7 @@ import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
 import MenuIcon from "../../assets/menu.png";
 import CloseIcon from "../../assets/close-circle.png";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -34,8 +35,7 @@ const Navbar = () => {
     return (
         <nav className="navbar" ref={navRef}>
             <div className="nav-logo-container">
-                <img src={Logo} alt="Elevouth Logo" className="logo" />
-                <h1>ELEVOUTH</h1>
+                <img src={logo} alt="Elevouth Logo" className="logo" />
             </div>
 
             <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
@@ -61,11 +61,18 @@ const Navbar = () => {
                         About Us
                     </Link>
                 </li>
-
+                <li className="nav-item">
+                    <Link
+                        to="/academy"
+                        className={activeLink === "academy" ? "active" : ""}
+                        onClick={() => handleLinkClick("academy")}
+                    >
+                        The Academy
+                    </Link>
+                </li>
                 <li className="nav-item dropdown">
                     <a href="#">Programs <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
-                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
@@ -76,7 +83,7 @@ const Navbar = () => {
                     <Link
                         to="#"
                         className="disabled-link"
-                        onClick={(e) => e.preventDefault()} 
+                        onClick={(e) => e.preventDefault()}
                     >
                         Events
                     </Link>
@@ -86,7 +93,6 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                     <a href="#">For Individuals <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
-                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
@@ -96,7 +102,6 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                     <a href="#">For Companies <img src={Arrowdown} alt="" /></a>
                     <ul className="dropdown-menu">
-                        <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>The Academy</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Compass</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Career Services</a></li>
                         <li><a href="https://selar.com/m/elevouth" target="blank" rel="noopener" onClick={() => setMenuOpen(false)}>Talent Placement</a></li>
@@ -111,7 +116,7 @@ const Navbar = () => {
                             else setMenuOpen(false);
                         }}
                     >
-                        Join The Hub
+                        Join The Next Cohort
                     </Link>
                 </li>
             </ul>
@@ -121,7 +126,7 @@ const Navbar = () => {
                     className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
                     onClick={(e) => isOnJoinHubPage && e.preventDefault()}
                 >
-                    Join The Hub
+                    Join The Next Cohort
                 </Link>
             </div>
 

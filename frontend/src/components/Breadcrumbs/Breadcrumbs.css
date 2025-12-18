@@ -1,0 +1,14 @@
+.breadcrumb {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #808080;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+    color: #808080;
+}

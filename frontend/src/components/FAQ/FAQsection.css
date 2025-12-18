@@ -96,13 +96,12 @@
   background: #FEFCF9;
   border-radius: 10px;
   width: 400px;
-  height: 327px;
+  height: 367px;
   padding: 24px;
   position: relative;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  overflow: hidden;
   flex-shrink: 0;
 }
 
@@ -250,7 +249,6 @@
 
   .faq-cards {
     flex-wrap: nowrap;
-    overflow-x: hidden;
     justify-content: center;
     width: 100%;
   }
@@ -279,7 +277,7 @@
 
   .faq-question {
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 30px;
     transition: transform 0.3s ease;
   }
 
@@ -290,10 +288,9 @@
   .faq-answer {
     font-size: 16px;
     color: #444;
-    margin-top: 35px;
+    margin-top: 30px;
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
     font-family: "Manrope";
     font-weight: 400;
     line-height: 100%;

@@ -46,6 +46,9 @@ const Footer = () => {
                             <p>Contact Us</p>
                         </div>
                     </div>
+                    <div className="academy">
+                        <h4>Academy</h4>
+                    </div>
                     <div className="resources">
                         <h4>Resources</h4>
                         <div className="resources-links">
@@ -60,7 +63,6 @@ const Footer = () => {
                     <div className="programs">
                         <h4>Programs</h4>
                         <div className="programs-links">
-                            <p>The Academy</p>
                             <p>Career Services</p>
                             <p>Career Compass</p>
                             <p>Talent Network</p>

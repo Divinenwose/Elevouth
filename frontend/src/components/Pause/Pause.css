@@ -1,101 +1,101 @@
-.pause-container{
-    background: #E4F2F6;
-    height: 1117px;
-    position: relative;
+.pause-container {
+  background: #E4F2F6;
+  height: 1117px;
+  position: relative;
 }
 
-.pause-write-up{
-    padding-left: 40px;
-    padding-top: 60px;
+.pause-write-up {
+  padding-left: 40px;
+  padding-top: 60px;
 }
 
-.pause-write-up h1{
-    font-family: "Arima";
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 72px;
-    line-height: 64px;
-    letter-spacing: 0%;
-    color: #424342;
+.pause-write-up h1 {
+  font-family: "Arima";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  color: #424342;
 }
 
-.pause-write-up p{
-    font-family: "Manrope";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: #111511;
-    margin-top: 20px;
+.pause-write-up p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #111511;
+  margin-top: 20px;
 }
 
-.pause-write-up h2{
-    font-family: "Manrope";
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 6%;
-    color: #111511;
-    margin-top: 20px;
+.pause-write-up h2 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 6%;
+  color: #111511;
+  margin-top: 20px;
 }
 
-.pause-image{
-    position: absolute;
-    top: 287px;
-    left: 480px;
+.pause-image {
+  position: absolute;
+  top: 287px;
+  left: 480px;
 }
 
-.pause-centre{
-    padding-top: 650px;
-    padding-left: 647px;
+.pause-centre {
+  padding-top: 650px;
+  padding-left: 647px;
 }
 
-.pause-center-writeup{
-    display: flex;
-    gap: 6px;
+.pause-center-writeup {
+  display: flex;
+  gap: 6px;
 }
 
-.pause-center-writeup p{
-    font-family: "Manrope";
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0%;
-    color: #414441;
+.pause-center-writeup p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #414441;
 }
 
-.line {
-    width: 4px;
-    height: 60px;
-    background-color: #4EC002;
-    border-radius: 2px;
+.pause-line {
+  width: 4px;
+  height: 60px;
+  background-color: #4EC002;
+  border-radius: 2px;
 }
 
-a.pause-btn{
-    font-family: "Manrope";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: #FAFCFA;
-    background: #104911;
-    padding-top: 12px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 40px;
-    cursor: pointer;
+a.pause-btn {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #FAFCFA;
+  background: #104911;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
   .pause-container {
-    height: auto; 
+    height: auto;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@ a.pause-btn{
     text-align: center;
   }
 
-  .pause-image  {
+  .pause-image {
     position: absolute;
     left: 20px;
     top: 150px;
@@ -139,7 +139,8 @@ a.pause-btn{
     padding: 0 20px;
     box-sizing: border-box;
   }
-  .pause-image img{
+
+  .pause-image img {
     width: 264px;
     height: 252px;
   }
@@ -173,7 +174,3 @@ a.pause-btn{
     line-height: 24px;
   }
 }
-
-
-
-

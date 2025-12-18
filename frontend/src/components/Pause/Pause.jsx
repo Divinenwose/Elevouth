@@ -18,7 +18,7 @@ const Pause = () => {
 
             <div className="pause-centre">
                 <div className="pause-center-writeup">
-                    <div className="line"></div>
+                    <div className="pause-line"></div>
                     <p>This is not a dream. This is what happens when clarity meets the right support. This is Elevouth.</p>
                 </div>
                 <Link to="/join-the-hub" className="pause-btn">
