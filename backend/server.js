@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/api/payment", paymentRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Backend running");
+  res.send("Backend running on Railway");
 });
 
 const PORT = process.env.PORT || 5000;
