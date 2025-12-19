@@ -24,8 +24,9 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
-  margin: 0;
+  gap: 1.5rem;
+  margin-block: 0;
+  margin-left: 20px;
   padding: 0;
   align-items: center;
 }
@@ -193,6 +194,11 @@
 
   .nav-logo-container {
     margin-top: 10px;
+  }
+
+  .nav-logo-container .logo{
+    width: 180px;
+    height: 30px;
   }
 
 
