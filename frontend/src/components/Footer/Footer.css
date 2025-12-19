@@ -85,7 +85,7 @@
 
 .footer-nav{
     display: flex;
-    gap: 50px;
+    gap: 38px;
     margin-left: 90px;
 }
 
@@ -205,7 +205,8 @@
     }
 
     .about-footer,
-    .programs{
+    .resources,
+    .legal{
         text-align: right;
         
     }
