@@ -1335,7 +1335,7 @@
 
 @media (max-width:360px) {
     .tech-section-container{
-        height: 609px;
+        height: 560px;
     }
 
     .tech-hero-left-one p{
@@ -1351,11 +1351,7 @@
     }
 
     .tech-hero-right img{
-        height: 329px;
-    }
-
-    .tech-hero-testimonial{
-        height: 90px;
+        height: 276px;
     }
 
     .tech-programs{
