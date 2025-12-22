@@ -72,7 +72,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #555555;
-    margin-top: 220px;
+    margin-top: 190px;
 }
 
 .tech-hero-left,
@@ -114,10 +114,11 @@
     width: 100%;
     border-radius: 10px;
     width: 960px;
-    height: 700px;
+    height: 1010px;
     position: absolute;
-    top: 197px;
+    top: 39px;
     right: 5px;
+    left: 430px;
 }
 
 .tech-hero-testimonial {
@@ -384,6 +385,7 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0%;
+    color: #111511;
 }
 
 .cohort-btn a {
@@ -394,7 +396,7 @@
     padding-bottom: 12px;
     padding-left: 24px;
     border-radius: 4px;
-    font-family: Manrope;
+    font-family: "Manrope";
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
@@ -816,7 +818,7 @@
     height: 347px;
 }
 
-.level-container{
+.level-container {
     margin-top: 18px;
 }
 
@@ -825,19 +827,522 @@
 
 
 
-/* Mobile */
-@media (max-width: 850px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
+
+@media (max-width: 786px) {
+    .tech-section-container {
+        height: 566px;
     }
 
-    .hero-left h1 {
-        font-size: 2rem;
+    .tech-hero-left,
+    .tech-hero-left-one {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 32px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
-    .hero-right img {
-        width: 85%;
-        margin: 0 auto;
+    .tech-hero-left-one h1 {
+        font-family: "Arima";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0%;
+        color: #606260;
+        margin-top: 100px;
+    }
+
+    .tech-hero-left-one p {
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #111511;
+    }
+
+    .tech-hero-btn {
+        width: 340px;
+        height: 44px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-right: 100px;
+        padding-bottom: 12px;
+        padding-left: 100px;
+        background: #104911;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .tech-hero-right img {
+        width: 380px;
+        height: 282px;
+        left: 0px;
+        top: 328px;
+    }
+
+    .tech-hero-right {
+        padding: 20px;
+    }
+
+    .feature-list {
+        margin-top: 100px;
+        gap: 16px;
+    }
+
+    .feature-list li {
+        font-family: "Manrope";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #111511;
+    }
+
+    .feature-list li::before {
+        width: 8px;
+        height: 8px;
+        transform: translateX(-135%);
+    }
+
+    .tech-hero-left h1 {
+        font-family: "Arima";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 33px;
+        line-height: 35px;
+        letter-spacing: 0%;
+        color: #606260;
+        margin-top: -20px;
+    }
+
+    .tech-hero-left p {
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10.5px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #111511;
+    }
+
+    .tech-hero-testimonial {
+        height: 84px;
+    }
+
+    .test-bottom,
+    .test-top {
+        gap: 0px;
+    }
+
+    .first-test,
+    .second-test,
+    .third-test,
+    .fourth-test {
+        width: 249px;
+        height: 42px;
+        border-radius: 4px;
+    }
+
+    .avatar {
+        height: 34px;
+    }
+
+    .test-text {
+        width: 137px;
+        height: 28px;
+        padding-top: 4.87px;
+        padding-right: 7.8px;
+        padding-bottom: 4.87px;
+        padding-left: 7.8px;
+    }
+
+    .first-test,
+    .second-test,
+    .third-test,
+    .fourth-test p {
+        font-family: "Manrope";
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 6.82px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #2F352F;
+    }
+
+    .tech-programs {
+        height: 1452px;
+        padding: 20px;
+    }
+
+    .programs-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .programs-text h1 {
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0%;
+        color: #606260;
+    }
+
+    .programs-text p {
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #111511;
+        text-align: left;
+    }
+
+    .tech-program-details {
+        height: 1180px;
+        width: 340px;
+    }
+
+    .tech-program-navbar {
+        width: 340px;
+        height: 36px;
+        overflow-x: auto;
+    }
+
+    .tech-program-navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tech-program-nav {
+        height: 36px;
+        display: flex;
+        gap: 10px;
+        padding-top: 4px;
+        padding-right: 12px;
+        padding-bottom: 4px;
+        padding-left: 12px;
+        white-space: nowrap;
+    }
+
+    .tech-program-nav li {
+        font-family: "Manrope";
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 0%;
+    }
+
+    .tech-program-nav li.active::after {
+        width: 98%;
+        height: 4px;
+        top: 30px;
+    }
+
+    .cohort {
+        width: 302px;
+        height: 222px;
+        padding-top: 20px;
+        padding-right: 16px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+
+    .cohort-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .jan,
+    .reg {
+        font-family: "Manrope";
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: 0%;
+    }
+
+    .jany {
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 20px;
+    }
+
+    .cohort-btn a {
+        display: inline-block;
+        width: 266px;
+        height: 48px;
+        padding-top: 12px;
+        padding-right: 50px;
+        padding-bottom: 12px;
+        padding-left: 50px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .box-scroll-area::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .box-scroll-area::-webkit-scrollbar-thumb {
+        height: 3px;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 10px;
+    }
+
+    .ux,
+    .projma,
+    .digital-mark,
+    .virtual,
+    .graphics,
+    .advanced {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 338px;
+        padding-top: 20px;
+        padding-right: 16px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        border-radius: 8px;
+        border-width: 0.3px;
+        margin-left: 5px;
+    }
+
+    .ux-container,
+    .ux-container-boot,
+    .web-ux-container {
+        gap: 8px;
+    }
+
+    .week {
+        width: 97px;
+        height: 22px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        border-radius: 9999px;
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .week1 {
+        width: 67px;
+        height: 22px;
+        padding-top: 4px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        border-radius: 9999px;
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .dline11,
+    .dline12,
+    .dline13 {
+        height: 142px;
+    }
+
+    .dline2,
+    .dline3,
+    .dline4{
+        width: 280px;
+    }
+
+    .design,
+    .design-fund {
+        gap: 4px;
+    }
+
+    .design-text {
+        gap: 16px;
+    }
+
+    .design-text h2 {
+        font-family: "Arima";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .design-text-advp h2 {
+        font-family: "Arima";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        width: 280px;
+    }
+
+    .design-text p {
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0%;
+    }
+
+    .more a {
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .beginnr {
+        font-family: "Manrope";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .eight-wks {
+        font-family: "Manrope";
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .duration {
+        font-family: "Manrope";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .amount p {
+        font-family: "Manrope";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .ratings p {
+        font-family: "Manrope";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 11px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .ratings {
+        margin-top: 0px;
+    }
+
+    .level-btn {
+        gap: 5px;
+    }
+
+    .nxt {
+        width: 168px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        border-width: 1px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .enroll a {
+        width: 168px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        border-radius: 4px;
+        font-family: "Manrope";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        white-space: nowrap;
+    }
+
+    .enroll a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .adv-btn a{
+        width: 100%;
+    }
+}
+
+@media (max-width:360px) {
+    .tech-section-container{
+        height: 609px;
+    }
+
+    .tech-hero-right img{
+        height: 329px;
+    }
+
+    .tech-programs{
+        padding: 9px;
     }
 }

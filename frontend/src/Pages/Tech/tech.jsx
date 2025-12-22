@@ -27,7 +27,7 @@ const courses = [
     duration: "8 Weeks",
     duration1: "Dec. 8 - Dec. 10",
     description:
-      "Kickstart your design journey from scratch: a complete, beginner-friendly path for non-designers.",
+      "Learn the core principles of UX, UI, user research, wireframes, design tools, and beginner workflows. Build your first real portfolio projects.",
     decription2: "Create a standout portfolio in record time with practical exercises.",
     dlineClass: "dline2",
     dlineTop: "dline11",
