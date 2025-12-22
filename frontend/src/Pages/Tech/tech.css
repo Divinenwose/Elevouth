@@ -1338,8 +1338,20 @@
         height: 609px;
     }
 
+    .tech-hero-left-one p{
+        font-size: 10px;
+    }
+
+    .tech-hero-left p{
+        font-size: 10px;
+    }
+
     .tech-hero-right img{
         height: 329px;
+    }
+
+    .tech-hero-testimonial{
+        height: 92px;
     }
 
     .tech-programs{
