@@ -1342,6 +1342,10 @@
         font-size: 10px;
     }
 
+    .tech-hero-left h1{
+        font-size: 30px;
+    }
+
     .tech-hero-left p{
         font-size: 10px;
     }
@@ -1351,7 +1355,7 @@
     }
 
     .tech-hero-testimonial{
-        height: 92px;
+        height: 90px;
     }
 
     .tech-programs{
