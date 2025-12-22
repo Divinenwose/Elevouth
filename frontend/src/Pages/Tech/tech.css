@@ -839,8 +839,8 @@
         flex-direction: column;
         gap: 10px;
         padding-top: 32px;
-        padding-right: 16px;
-        padding-left: 16px;
+        padding-right: 7px;
+        padding-left: 7px;
     }
 
     .tech-hero-left-one h1 {
@@ -858,11 +858,13 @@
         font-family: "Manrope";
         font-weight: 400;
         font-style: normal;
-        font-size: 13px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 1.6;
         letter-spacing: 0%;
         color: #111511;
     }
+
+    
 
     .tech-hero-btn {
         width: 340px;
@@ -1185,7 +1187,7 @@
 
     .dline2,
     .dline3,
-    .dline4{
+    .dline4 {
         width: 280px;
     }
 
@@ -1328,33 +1330,33 @@
         height: 15px;
     }
 
-    .adv-btn a{
+    .adv-btn a {
         width: 100%;
     }
 }
 
 @media (max-width:360px) {
-    .tech-section-container{
+    .tech-section-container {
         height: 560px;
     }
 
-    .tech-hero-left-one p{
-        font-size: 10px;
+    .tech-hero-left-one p {
+        font-size: 12px;
     }
 
-    .tech-hero-left h1{
+    .tech-hero-left h1 {
         font-size: 30px;
     }
 
-    .tech-hero-left p{
+    .tech-hero-left p {
         font-size: 10px;
     }
 
-    .tech-hero-right img{
+    .tech-hero-right img {
         height: 276px;
     }
 
-    .tech-programs{
+    .tech-programs {
         padding: 9px;
     }
 }
