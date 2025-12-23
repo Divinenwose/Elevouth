@@ -10,9 +10,13 @@
     background: #FFFFFF;
 }
 
+.checkout-back {
+    display: none;
+}
+
+
 .checkout-container {
     background: #F8F9F8;
-
     padding: 40px;
 }
 
@@ -62,7 +66,6 @@
 .checkout-flex h2 {
     font-family: "Arima";
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 48px;
     line-height: 120%;
     letter-spacing: 0%;
@@ -416,4 +419,349 @@
     margin-left: 10px;
     width: 20px;
     height: 20px;
+}
+
+@media (max-width:768px) {
+    .checkout-container {
+        padding: 10px;
+        height: auto;
+    }
+
+    .checkout-nav {
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        padding-inline: 10px;
+    }
+
+    .checkout-back {
+        display: inline;
+    }
+
+    .checkout-back img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .checkout-logo {
+        width: 100px;
+        height: 23px
+    }
+
+    .checkout-bread {
+        display: none;
+    }
+
+    .checkout-section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkout-flex {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        gap: 16px;
+    }
+
+    .checkout-flex h2 {
+        font-size: 24px;
+    }
+
+    .input-container {
+        width: 350px;
+        height: 402px;
+        border-radius: 16px;
+        border-width: 1px;
+        padding: 12px;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: start;
+    }
+
+    .fname,
+    .lname {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .names input,
+    .email input,
+    .payment-select:valid {
+        width: 325px;
+        height: 48px;
+        max-height: 48px;
+        padding: 12px;
+    }
+
+    .payment-select:valid {
+        padding-block: 10px;
+        padding-inline: 12px;
+    }
+
+    .input-container label {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .input-container input::placeholder,
+    .input-container option,
+    .payment-select {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .checkout-main {
+        width: 354px;
+        height: 556px;
+        padding: 16px;
+        margin-top: 12px;
+    }
+
+    .checkout-card {
+        gap: 16px;
+    }
+
+    .program-row h4 {
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .cart-price {
+        margin-top: 8px;
+    }
+
+
+    .new-price {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .old-price {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .qty-control {
+        width: 112px;
+        height: 48px;
+        gap: 22px;
+        padding-top: 8px;
+        padding-right: 17px;
+        padding-bottom: 8px;
+        padding-left: 17px;
+        margin-top: 10px;
+    }
+
+    .coupon-section {
+        width: 323px;
+        height: 186px;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 8px;
+    }
+
+    .coupon-section p {
+        font-size: 14px;
+    }
+
+    .coupon-link {
+        width: 81px;
+        height: 38px;
+        max-height: 48px;
+        padding: 8px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .coupon-container label {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .coupon-input {
+        margin-top: 8px;
+    }
+
+    .coupon-input input {
+        width: 300px;
+        height: 48px;
+        max-height: 48px;
+        padding: 16px;
+    }
+
+    .coupon-input input::placeholder {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .coupon-btn {
+        width: 90px;
+        height: 38px;
+        padding-top: 8px;
+        padding-right: 24px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
+    .total-row,
+    .total-row-grand {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .cartt {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .cartt-amt {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .pay-now-btn {
+        width: 332px;
+        height: 48px;
+        max-height: 48px;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .checkout-container {
+        padding: 13px;
+    }
+
+    .input-container {
+        width: 394px;
+    }
+
+    .names input,
+    .email input,
+    .payment-select:valid {
+        width: 358px;
+    }
+
+    .checkout-main {
+        width: 394px;
+    }
+
+    .coupon-section {
+        width: 360px;
+    }
+
+    .coupon-input input {
+        width: 305px;
+    }
+
+    .pay-now-btn {
+        width: 345px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .input-container {
+        width: 354px;
+    }
+
+    .names input,
+    .email input,
+    .payment-select:valid {
+        width: 318px;
+    }
+
+    .checkout-main {
+        width: 354px;
+    }
+
+    .coupon-section {
+        width: 325px;
+    }
+
+    .coupon-input input {
+        width: 275px;
+    }
+
+    .pay-now-btn {
+        width: 315px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .input-container {
+        width: 354px;
+    }
+
+    .names input,
+    .email input,
+    .payment-select:valid {
+        width: 318px;
+    }
+
+    .checkout-main {
+        width: 354px;
+    }
+
+    .coupon-section {
+        width: 325px;
+    }
+
+    .coupon-input input {
+        width: 275px;
+    }
+
+    .pay-now-btn {
+        width: 315px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .input-container {
+        width: 340px;
+    }
+
+    .names input,
+    .email input,
+    .payment-select:valid {
+        width: 300px;
+    }
+
+    .checkout-main {
+        width: 340px;
+    }
+
+    .coupon-section {
+        width: 310px;
+    }
+
+    .coupon-input input {
+        width: 270px;
+    }
+
+    .pay-now-btn {
+        width: 300px;
+    }
 }

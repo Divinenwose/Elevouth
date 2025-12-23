@@ -5,6 +5,7 @@ import "./Checkout.css";
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumbs.jsx";
 import PaymentSuccessModal from "../../components/PaymentSuccessModal/PaymentSuccessModal.jsx";
 import logo from "../../assets/logo.png";
+import back from "../../assets/back.png";
 
 const Checkout = () => {
     const { state } = useLocation();
@@ -116,7 +117,14 @@ const Checkout = () => {
     return (
         <div className="checkout-page">
             <div className="checkout-nav">
-                <img src={logo} alt="" />
+                <div
+                    className="checkout-back"
+                    onClick={() => navigate("/academy/tech-programs")}
+                    aria-label="Back to programs"
+                >
+                    <img src={back} alt="" />
+                </div>
+                <img className="checkout-logo" src={logo} alt="" />
             </div>
             <div className="checkout-container">
                 <div className="checkout-bread">
@@ -128,10 +136,9 @@ const Checkout = () => {
                 <div className="checkout-section">
                     <div className="checkout-flex">
                         <h2>Contact Information</h2>
-
                         <div className="input-container">
                             <div className="names">
-                                <div>
+                                <div className="fname">
                                     <label>First Name</label>
                                     <input
                                         placeholder="Enter first name"
@@ -144,7 +151,7 @@ const Checkout = () => {
                                         }
                                     />
                                 </div>
-                                <div>
+                                <div className="lname">
                                     <label>Last Name</label>
                                     <input
                                         placeholder="Enter last name"
@@ -272,7 +279,7 @@ const Checkout = () => {
                 </div>
             </div>
             <PaymentSuccessModal
-                open={showSuccessModal}   
+                open={showSuccessModal}
                 onClose={() => setShowSuccessModal(false)}
                 course={course}
                 payment={paymentInfo}
