@@ -108,28 +108,31 @@ const Navbar = () => {
                     </ul>
                 </li>
                 <li className="mobile-btn">
-                    <Link
-                        to={isOnJoinHubPage ? "#" : "/hub"}
+                    <a
+                        href="https://elevouthacademyc2.lovable.app"
                         className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onClick={(e) => {
                             if (isOnJoinHubPage) e.preventDefault();
                             else setMenuOpen(false);
                         }}
                     >
                         Join The Next Cohort
-                    </Link>
+                    </a>
                 </li>
             </ul>
             <div className="nav-btn-container">
-                <Link
-                    to={isOnJoinHubPage ? "#" : "/hub"}
+                <a
+                    href="https://elevouthacademyc2.lovable.app"
                     className={`nav-btn ${isOnJoinHubPage ? "disabled" : ""}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={(e) => isOnJoinHubPage && e.preventDefault()}
                 >
                     Join The Next Cohort
-                </Link>
+                </a>
             </div>
-
         </nav>
     );
 };

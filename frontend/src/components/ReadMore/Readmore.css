@@ -133,3 +133,273 @@
     align-items: center;
     gap: 10px;
 }
+
+@media (max-width:768px) {
+    .modal-box {
+        width: 360px;
+        height: 796px;
+        top: 40px;
+        left: 0px;
+        border-radius: 16px;
+        border-width: 1px;
+        padding: 20px;
+    }
+
+    .top-container {
+        padding-top: 16px;
+        padding-right: 8px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+    }
+
+    .top-container h2 {
+        font-size: 20px;
+    }
+
+    .close-modal img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .modal-content {
+        gap: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .wire {
+        width: 225px;
+        height: 144px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .modal-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .modal-join {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .modal-enroll {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:390px) {
+    .modal-box {
+        width: 340px;
+        height: 570px;
+        top: 30px;
+        left: 0px;
+        border-radius: 16px;
+        border-width: 1px;
+        padding: 20px;
+    }
+
+    .top-container{
+        padding-top: 10px;
+        padding-right: 8px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+    }
+
+    .top-container h2 {
+        font-size: 18px;
+    }
+
+    .close-modal img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .modal-content {
+        gap: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+     .wire {
+        width: 225px;
+        height: 120px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .modal-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-join {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .modal-enroll {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:375px) {
+    .modal-box {
+        width: 340px;
+        height: 570px;
+        top: 30px;
+        left: 0px;
+        border-radius: 16px;
+        border-width: 1px;
+        padding: 20px;
+    }
+
+    .top-container{
+        padding-top: 10px;
+        padding-right: 8px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+    }
+
+    .top-container h2 {
+        font-size: 18px;
+    }
+
+    .close-modal img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .modal-content {
+        gap: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+     .wire {
+        width: 225px;
+        height: 120px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .modal-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-join {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .modal-enroll {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:360px) {
+    .modal-box {
+        width: 340px;
+        height: 639px;
+        top: 38px;
+        left: 0px;
+        border-radius: 16px;
+        border-width: 1px;
+        padding: 20px;
+    }
+
+    .modal-content {
+        gap: 12px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .modal-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .modal-join {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .modal-enroll {
+        width: 164px;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

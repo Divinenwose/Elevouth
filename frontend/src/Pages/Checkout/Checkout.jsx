@@ -119,7 +119,7 @@ const Checkout = () => {
             <div className="checkout-nav">
                 <div
                     className="checkout-back"
-                    onClick={() => navigate("/academy/tech-programs")}
+                    onClick={() => navigate("/academy/techprograms")}
                     aria-label="Back to programs"
                 >
                     <img src={back} alt="" />

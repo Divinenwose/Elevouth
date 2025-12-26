@@ -27,7 +27,7 @@ const Readmore = ({ open, onClose }) => {
                         <li><img className="modal-dots" src={dots} alt="" />Position yourself for a promotion or a new career in a fast-growing industry.</li>
                     </ul>
                     <div className="modal-btn">
-                        <a href="" className="modal-join">Join Next Cohort</a>
+                        <a href="https://elevouthacademyc2.lovable.app" target="_blank" rel="noopener noreferrer" className="modal-join">Join Next Cohort</a>
                         <a className="modal-enroll" href="">Enroll Now <img src={arrow} alt="" /> </a>
                     </div>
                 </div>

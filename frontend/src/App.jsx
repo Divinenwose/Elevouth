@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 function App() {
   const location = useLocation();
 
-  // hide Navbar on any checkout page
+  
   const hideNavbar = location.pathname.includes("/checkout");
 
   return (
@@ -27,9 +27,9 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/hub" element={<JointheHub />} />
         <Route path="/about" element={<About />} />
-        <Route path="/academy/tech-programs" element={<Tech />} />
+        <Route path="/academy/techprograms" element={<Tech />} />
         <Route path="/academy" element={<Academy />} />
-        <Route path="/academy/tech-programs/checkout" element={<Checkout />} /> 
+        <Route path="/academy/techprograms/checkout" element={<Checkout />} /> 
       </Routes>
     </>
   );

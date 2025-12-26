@@ -38,7 +38,7 @@ const courses = [
     title: "Project Management",
     title1: "Advanced Prototyping: From early ideas to rich interactions",
     title2: "Portfolio Sprint",
-    price: 120000,
+    price: 70000,
     level: "Beginner – Intermediate",
     level1: "Online – Global Access",
     level2: "Online - YouTube Live",
@@ -88,7 +88,7 @@ const courses = [
     rating: "4.5"
   },
   {
-    title: "Graphics Design",
+    title: "Branding and Graphics Design",
     title1: "Advanced Prototyping: From early ideas to rich interactions",
     title2: "Portfolio Sprint",
     price: 70000,

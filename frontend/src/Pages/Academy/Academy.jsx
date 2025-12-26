@@ -100,7 +100,7 @@ const Academy = () => {
                             <p>Learn in-demand tech skills like UI/UX, Product, Marketing, Project Management, and more—through hands-on projects and real-world execution.</p>
                             <Link
                                 className="extech"
-                                to="/academy/tech-programs"
+                                to="/academy/techprograms"
                                 onClick={() => window.scrollTo(0, 0)}
                             >
                                 Explore Tech Tracks
