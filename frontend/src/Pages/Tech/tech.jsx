@@ -130,14 +130,14 @@ const slides = [
   {
     id: 1,
     title: "Start your career with <br /> skills employers want.",
-    text: "Gain practical, job-ready experience through expert-led <br /> lessons, real projects, and guided learning paths.",
+    text: "Gain practical, job-ready experience through expert-led  lessons, real projects, and guided learning paths.",
     btn: "Check Out Courses",
     img: Techimg,
   },
   {
     id: 2,
     title: "Enrollment for the Next <br /> Cohort is Now Open",
-    text: "Hundreds are already securing their spots to learn, grow, and land real <br /> opportunities. Don’t watch from the sidelines",
+    text: "Hundreds are already securing their spots to learn, grow, and land real  opportunities. Don’t watch from the sidelines",
     btn: "Check Out Courses",
     features: [
       "Limited Slot",
