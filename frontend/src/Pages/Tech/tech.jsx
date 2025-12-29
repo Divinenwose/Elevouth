@@ -355,7 +355,7 @@ const Tech = () => {
                                 </a>
                                 <div className="enroll">
                                   <Link
-                                    to="/academy/tech-programs/checkout"
+                                    to="/academy/techprograms/checkout"
                                     state={{ course }}
                                   >
                                     Enroll Now <img src={arrow} alt="" />
@@ -455,7 +455,7 @@ const Tech = () => {
                                 <a href="" className="nxt">Join Next Cohort</a>
                                 <div className="enroll">
                                   <Link
-                                    to="/academy/tech-programs/checkout"
+                                    to="/academy/techprograms/checkout"
                                     state={{ course }}
                                   >
                                     Enroll Now <img src={arrow} alt="" />
@@ -469,7 +469,6 @@ const Tech = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="cohort">
                   <div className="cohort-container">
                     <div className="cohort-text">
@@ -564,7 +563,7 @@ const Tech = () => {
                               <div className="adv-btn">
                                 <div className="enroll">
                                   <Link
-                                    to="/academy/tech-programs/checkout"
+                                    to="/academy/techprograms/checkout"
                                     state={{ course }}
                                   >
                                     Enroll Now <img src={arrow} alt="" />
@@ -630,7 +629,6 @@ const Tech = () => {
                                 <div className="line"></div>
                               </div>
                             </div>
-
                             <div className="level-container">
                               <div className="level-flex">
                                 <div className="level">
@@ -645,7 +643,6 @@ const Tech = () => {
                                   </div>
                                 </div>
                               </div>
-
                               <div className="adv-btn">
                                 <a href="">
                                   Register now <img src={arrow} alt="" />
@@ -658,7 +655,6 @@ const Tech = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="cohort">
                   <div className="cohort-container">
                     <div className="cohort-text">
@@ -716,7 +712,7 @@ const Tech = () => {
                                 </div>
                               </div>
                               <div className="adv-btn">
-                                <a href="">Register now  <img src={arrow} alt="" /></a>
+                                <a href="https://elevouthacademyc2.lovable.app" target="_blank" rel="noopener noreferrer">Register now  <img src={arrow} alt="" /></a>
                               </div>
                             </div>
                           </div>
