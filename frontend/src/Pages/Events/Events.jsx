@@ -38,7 +38,7 @@ import supashop from "../../assets/supashop.png";
 import awie from "../../assets/awie.png";
 import payverde from "../../assets/payverde.png";
 
-const getSpeakersPerPage = () => (window.innerWidth < 768 ? 1 : window.innerWidth < 1200 ? 2 : 3);
+const getSpeakersPerPage = () => (window.innerWidth <= 768 ? 1 : 3);
 
 const Events = () => {
 

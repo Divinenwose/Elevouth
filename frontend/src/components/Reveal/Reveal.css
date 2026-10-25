@@ -43,10 +43,6 @@ nav, header { animation: navDrop 0.6s ease both; }
 /* ---- Interactions ---- */
 a, button { transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, translate 0.25s ease, opacity 0.25s ease; }
 
-a[class*="reserve"], a[class*="sponsor"], a[class*="cta"], a[class*="btn"], a[class*="beyond-"],
-a.watch, a.listen, button[class*="btn"], button[class*="cta"] {
-  display: inline-block;
-}
 a[class*="reserve"]:hover, a[class*="sponsor"]:hover, a[class*="cta"]:hover,
 a[class*="beyond-"]:hover, a.watch:hover, a.listen:hover,
 button[class*="btn"]:hover, button[class*="cta"]:hover {

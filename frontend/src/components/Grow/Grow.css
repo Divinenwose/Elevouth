@@ -191,9 +191,3 @@
     max-width: 100%;
   }
 }
-
-
-@media (max-width: 480px) {
-  .grow-image-wrapper { min-width: 0; max-width: 100%; }
-  .grow-image-wrapper img { max-width: 100%; }
-}
