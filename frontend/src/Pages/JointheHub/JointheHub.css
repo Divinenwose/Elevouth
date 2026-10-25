@@ -1794,3 +1794,13 @@
         box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
     }
 }
+
+
+/* Hub welcome heading: always exactly two lines on phones */
+@media (max-width: 767px) {
+    .hub-welcome-content h4 {
+        font-size: min(28px, calc((100vw - 40px) / 13.8));
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+}
