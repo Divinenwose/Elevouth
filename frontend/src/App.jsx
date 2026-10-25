@@ -11,6 +11,7 @@ import Checkout from "./Pages/Checkout/Checkout.jsx";
 import Reveal from "./components/Reveal/Reveal.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import "./mobile-buttons.css";
+import "./mobile-text.css";
 
 function App() {
   const location = useLocation();

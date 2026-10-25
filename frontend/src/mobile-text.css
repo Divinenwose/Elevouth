@@ -1,0 +1,11 @@
+/* "Stress No More!" sub-text: three balanced lines on phones */
+@media (max-width: 767px) {
+  .stress-content p {
+    font-size: clamp(11px, 3.6vw, 14px);
+    line-height: 1.6;
+    max-width: 24em;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
+  }
+}

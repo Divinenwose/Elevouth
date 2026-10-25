@@ -2649,3 +2649,100 @@
   .tech-program-nav::-webkit-scrollbar { display: none; }
   .tech-program-nav li { flex: 0 0 auto; white-space: nowrap; }
 }
+
+
+/* ---- Hero on phones: nothing is clipped; slide image & testimonials fully show ---- */
+@media (max-width: 768px) {
+  .tech-section-container {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 28px;
+  }
+
+  .tech-hero {
+    height: auto !important;
+  }
+
+  /* slide 1: the photo sits below the text at full width */
+  .tech-hero-left-one {
+    height: auto !important;
+    padding-bottom: 8px;
+  }
+
+  .tech-hero-right:has(> img) {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .tech-hero-right img {
+    position: static !important;
+    display: block;
+    width: calc(100% - 20px) !important;
+    max-width: 100%;
+    height: auto !important;
+    margin: 12px 10px 0 !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+  }
+
+  /* slide 2: feature list + testimonial cards stack and stay readable */
+  .tech-hero-right:not(:has(> img)) {
+    height: auto !important;
+    padding-bottom: 8px;
+  }
+
+  .tech-hero-left {
+    height: auto !important;
+    padding-bottom: 12px;
+  }
+
+  .tech-hero-testimonial {
+    height: auto !important;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 10px 4px;
+    overflow: hidden;
+  }
+
+  .test-top,
+  .test-bottom {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .first-test,
+  .second-test,
+  .third-test {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 64px;
+    gap: 12px;
+    padding: 10px 12px !important;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation: none !important;
+  }
+
+  .avatar {
+    height: 44px !important;
+    width: 44px;
+    flex: 0 0 44px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .test-text {
+    flex: 1;
+    width: auto !important;
+    height: auto !important;
+    padding: 10px 12px !important;
+    border-radius: 6px;
+  }
+
+  .test-text p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+}

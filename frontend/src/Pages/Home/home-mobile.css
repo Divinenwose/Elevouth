@@ -127,4 +127,55 @@
   /* ---- Candidates ---- */
   .candidates-paragraph p { margin-top: 0 !important; line-height: 1.5 !important; }
   .candidates-grid { margin-left: 0 !important; margin-top: 32px !important; }
+
+  /* ---- Breathing room for text (was set to 100% line-height) ---- */
+  .pause-container p,
+  .cards-container p,
+  .gets-container p,
+  .teams-container p,
+  .path-container p,
+  .testimonial-section p,
+  .candidate-container p,
+  .story-container p,
+  .grow-container p {
+    line-height: 1.55 !important;
+  }
+
+  .cards-container h1 + p, .cards-container h2 + p, .cards-container h3 + p, .cards-container h4 + p,
+  .gets-container h1 + p, .gets-container h2 + p, .gets-container h3 + p, .gets-container h4 + p,
+  .teams-container h1 + p, .teams-container h2 + p, .teams-container h3 + p, .teams-container h4 + p,
+  .path-container h1 + p, .path-container h2 + p, .path-container h3 + p, .path-container h4 + p,
+  .testimonial-section h1 + p, .testimonial-section h2 + p,
+  .candidate-container h2 + p {
+    margin-top: 14px !important;
+  }
+
+  .cards-container h2,
+  .gets-container h2,
+  .teams-container h2,
+  .path-container h2,
+  .testimonial-section h2 {
+    line-height: 1.3 !important;
+  }
+
+  /* card titles and their text */
+  .cards-container h3,
+  .cards-container h4,
+  .gets-container h3,
+  .teams-container h3,
+  .teams-container h4 {
+    line-height: 1.3 !important;
+    margin-bottom: 8px;
+  }
+
+  .path-container h2 + p { margin-bottom: 8px; }
+
+  .candidates-card-one,
+  .candidates-card-two,
+  .candidates-card-three,
+  .candidates-card-four {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 16px;
+  }
 }
