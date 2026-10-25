@@ -332,3 +332,62 @@
     margin: 0;
   }
 }
+
+
+/* ==========================================================================
+   Responsive layer: let the 3-card carousel shrink on tablets / laptops.
+   (Desktop >= 1400px and the <= 768px mobile rules are untouched.)
+   ========================================================================== */
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+  .faq-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .faq-section .faq-carousel {
+    gap: 8px;
+  }
+
+  .faq-section .faq-cards {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .faq-section .faq-card {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    max-width: 400px;
+    height: auto;
+    min-height: 367px;
+    flex-shrink: 1;
+    padding: 20px;
+  }
+
+  .faq-section .faq-number {
+    font-size: clamp(88px, 10vw, 128px);
+  }
+
+  .faq-section .faq-card:hover .faq-number {
+    font-size: 32px;
+  }
+
+  .faq-section .faq-card:hover .faq-answer {
+    max-height: 200px;
+  }
+
+  .faq-section-right p {
+    width: min(567px, 100%);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faq-section-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-section-left {
+    padding-left: 0;
+  }
+}

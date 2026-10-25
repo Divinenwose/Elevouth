@@ -1,0 +1,76 @@
+/* ---- Scroll reveal (added by Reveal.jsx) ---- */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, translate 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, translate;
+}
+.reveal-up { translate: 0 32px; }
+.reveal.reveal-in { opacity: 1; translate: 0 0; }
+
+/* ---- Page entrance ---- */
+@keyframes pageFadeIn {
+  from { opacity: 0; translate: 0 10px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@keyframes navDrop {
+  from { opacity: 0; translate: 0 -16px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@keyframes heroRise {
+  from { opacity: 0; translate: 0 28px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@keyframes softFloat {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -10px; }
+}
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(250, 203, 51, 0.55); }
+  70%  { box-shadow: 0 0 0 14px rgba(250, 203, 51, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(250, 203, 51, 0); }
+}
+
+nav, header { animation: navDrop 0.6s ease both; }
+
+.hero-text, .evnt-top .top-write-up, .tech-hero-left, .about-flex-right {
+  animation: heroRise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) 0.1s both;
+}
+.hero-image, .event-hero-container, .about-flex-left {
+  animation: heroRise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s both;
+}
+
+/* ---- Interactions ---- */
+a, button { transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, translate 0.25s ease, opacity 0.25s ease; }
+
+a[class*="reserve"], a[class*="sponsor"], a[class*="cta"], a[class*="btn"], a[class*="beyond-"],
+a.watch, a.listen, button[class*="btn"], button[class*="cta"] {
+  display: inline-block;
+}
+a[class*="reserve"]:hover, a[class*="sponsor"]:hover, a[class*="cta"]:hover,
+a[class*="beyond-"]:hover, a.watch:hover, a.listen:hover,
+button[class*="btn"]:hover, button[class*="cta"]:hover {
+  translate: 0 -3px;
+  box-shadow: 0 8px 18px rgba(16, 73, 17, 0.2);
+}
+a[class*="reserve"]:active, a[class*="cta"]:active, button[class*="btn"]:active { translate: 0 0; }
+
+.speaker-card { transition: translate 0.35s ease, box-shadow 0.35s ease; }
+.speaker-card:hover { translate: 0 -6px; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08); }
+
+.countdown-item { animation: softFloat 4s ease-in-out infinite; }
+.countdown-item:nth-of-type(2) { animation-delay: 0.3s; }
+.countdown-item:nth-of-type(3) { animation-delay: 0.6s; }
+
+.dot { transition: background-color 0.3s ease, transform 0.3s ease; }
+.dot.active { transform: scale(1.35); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; translate: 0 0 !important; }
+}

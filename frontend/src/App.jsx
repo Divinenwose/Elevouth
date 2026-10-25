@@ -8,6 +8,7 @@ import About from "./Pages/About/About.jsx";
 import Tech from "./Pages/Tech/tech.jsx";
 import Academy from "./Pages/Academy/Academy.jsx";
 import Checkout from "./Pages/Checkout/Checkout.jsx"; 
+import Reveal from "./components/Reveal/Reveal.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <Reveal />
       {/* <AnnouncementBar /> */}
       {!hideNavbar && <Navbar />}
       <Routes>

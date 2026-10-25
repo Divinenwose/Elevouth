@@ -2493,3 +2493,169 @@
 
 
 }
+
+/* ==========================================================================
+   Responsive layer (desktop >= 1400px and the <= 786px phone rules above are
+   untouched)
+   ========================================================================== */
+
+/* ---- Laptops & tablets (787-1399px): scale the hero, make the panel fluid ---- */
+@media (min-width: 787px) and (max-width: 1399px) {
+    .tech-section-container {
+        height: auto;
+        min-height: 62.4vw;
+    }
+
+    .tech-hero-left h1,
+    .tech-hero-left-one h1 {
+        font-size: clamp(38px, 4.72vw, 68px);
+    }
+
+    .tech-hero-left-one h1 {
+        margin-top: 13.2vw;
+    }
+
+    .tech-hero-left p {
+        width: min(735px, 52vw);
+        font-size: clamp(16px, 1.5vw, 20px);
+        line-height: 1.45;
+    }
+
+    .tech-hero-left,
+    .tech-hero-left-one {
+        position: relative;
+        z-index: 2;
+    }
+
+    .tech-hero-left-one p {
+        width: min(578px, 37vw);
+        font-size: clamp(16px, 1.4vw, 20px);
+        line-height: 1.45;
+    }
+
+    .tech-hero-right img {
+        width: 66.7vw;
+        height: auto;
+        left: auto;
+        right: 0.35vw;
+    }
+
+    .tech-programs {
+        height: auto;
+        padding: 40px 24px 60px;
+    }
+
+    .programs-text {
+        gap: 30px;
+    }
+
+    .programs-text p {
+        max-width: min(420px, 45%);
+    }
+
+    .tech-program-details {
+        width: 100%;
+        height: auto;
+        min-height: 950px;
+    }
+
+    .tech-program-navbar {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .tech-program-nav {
+        gap: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        white-space: nowrap;
+    }
+
+    .cohort {
+        width: auto;
+        height: auto;
+        min-height: 96px;
+    }
+
+    .cohort-container {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .box-container {
+        padding: 30px 20px;
+    }
+
+    .ux,
+    .projma,
+    .digital-mark,
+    .virtual,
+    .graphics,
+    .advanced {
+        flex: 0 0 calc(50% - 10px);
+        min-width: 0;
+        height: auto;
+        min-height: 442px;
+    }
+
+    .dline2,
+    .dline3,
+    .dline4,
+    .line {
+        width: 100%;
+    }
+
+    .web-design-text h2 {
+        width: auto;
+    }
+
+    .level-btn {
+        flex-wrap: wrap;
+    }
+
+    .nxt,
+    .enroll,
+    .enroll a {
+        flex: 1 1 150px;
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ---- Tablet: single-column course cards ---- */
+@media (min-width: 787px) and (max-width: 1024px) {
+    .ux,
+    .projma,
+    .digital-mark,
+    .virtual,
+    .graphics,
+    .advanced {
+        flex-basis: 100%;
+    }
+}
+
+/* ---- Large phones / small tablets (431-786px): let the panel use the width ---- */
+@media (min-width: 431px) and (max-width: 786px) {
+    .tech-program-details,
+    .tech-program-navbar {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    .tech-program-details {
+        margin-inline: auto;
+    }
+
+    .cohort {
+        width: calc(100% - 40px);
+    }
+}
+
+
+@media (max-width: 480px) {
+  .tech-hero-right img { max-width: 100vw; height: auto; }
+  .tech-program-nav { overflow-x: auto; scrollbar-width: none; gap: 20px; }
+  .tech-program-nav::-webkit-scrollbar { display: none; }
+  .tech-program-nav li { flex: 0 0 auto; white-space: nowrap; }
+}

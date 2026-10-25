@@ -305,3 +305,307 @@
     letter-spacing: 0%;
     color: #606260;
 }
+
+/* ==========================================================================
+   Responsive layer (desktop rules above are untouched; these only apply
+   below 1200px)
+   ========================================================================== */
+
+/* ---- Tablet & small laptops ---- */
+@media (max-width: 1199px) {
+    .academy-hero {
+        height: auto;
+        padding: 130px 24px 70px;
+        gap: 24px;
+    }
+
+    .academy-hero h2 {
+        margin-top: 0;
+    }
+
+    .academy-hero h2,
+    .tech,
+    .creative,
+    .leadership {
+        font-size: clamp(34px, 5.6vw, 52px);
+    }
+
+    .academy-hero p {
+        max-width: 640px;
+    }
+
+    .pictures {
+        height: auto;
+        padding: 32px 24px;
+        gap: 12px;
+    }
+
+    .picture-flex {
+        flex: 1 1 0;
+        width: auto;
+        height: auto;
+        min-width: 0;
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .pictures img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 383 / 358;
+        object-fit: cover;
+        display: block;
+    }
+
+    .academy-content {
+        height: auto;
+        padding: 40px 24px 60px;
+    }
+
+    .academy-text h2 {
+        font-size: clamp(30px, 4.6vw, 44px);
+        line-height: 1.2;
+    }
+
+    .academy-images {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .academy-image,
+    .academy-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .academy4 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 604 / 456;
+        object-fit: cover;
+        display: block;
+    }
+
+    .academy-image-two {
+        gap: 16px;
+    }
+
+    .academy-box {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .academy-img,
+    .academy-boximg {
+        flex: 0 0 42%;
+    }
+
+    .academy-info,
+    .academy-box-info {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .academy-img img,
+    .academy-boximg img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 767px) {
+    .academy-hero {
+        padding: 100px 20px 50px;
+    }
+
+    .academy-hero h2,
+    .tech,
+    .creative,
+    .leadership {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .academy-hero br,
+    .academy-text br,
+    .path-content br {
+        display: none;
+    }
+
+    .academy-hero p,
+    .academy-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* photo strip becomes a swipeable row */
+    .pictures {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 24px 20px;
+    }
+
+    .picture-flex {
+        flex: 0 0 78%;
+        scroll-snap-align: center;
+    }
+
+    .academy-content {
+        padding: 30px 20px 50px;
+    }
+
+    .academy-text h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .academy-images {
+        margin-top: 28px;
+    }
+
+    .academy-image {
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .academy-image-text {
+        margin-top: 20px;
+    }
+
+    .academy-image-text h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .academy-image-text p,
+    .academy-info p,
+    .academy-box-info p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .academy-box {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .academy-box:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .academy-img,
+    .academy-boximg {
+        flex: none;
+    }
+
+    .academy-img img,
+    .academy-boximg img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .academy-info,
+    .academy-box-info {
+        flex: none;
+        padding: 0 4px 8px;
+    }
+
+    .academy-info h2,
+    .academy-box-info h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 4px;
+    }
+
+    .extech,
+    .extech1 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-start;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+
+/* ---- Laptops (1200-1399px): shrink fixed-width blocks instead of overflowing ---- */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .pictures {
+        height: auto;
+    }
+
+    .picture-flex {
+        flex: 1 1 0;
+        width: auto;
+        height: auto;
+        min-width: 0;
+    }
+
+    .pictures img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 383 / 358;
+        object-fit: cover;
+        display: block;
+    }
+
+    .academy-content {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .academy-images {
+        align-items: stretch;
+    }
+
+    .academy-image {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+        height: auto;
+    }
+
+    .academy4 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 604 / 456;
+        object-fit: cover;
+        display: block;
+    }
+
+    .academy-image-two {
+        flex: 0 1 604px;
+        min-width: 0;
+    }
+
+    .academy-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .academy-img,
+    .academy-boximg {
+        flex: 0 0 44%;
+    }
+
+    .academy-info,
+    .academy-box-info {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .academy-img img,
+    .academy-boximg img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+    }
+}
