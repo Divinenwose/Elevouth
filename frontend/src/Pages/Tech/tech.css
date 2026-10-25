@@ -2624,16 +2624,6 @@
 }
 
 /* ---- Tablet: single-column course cards ---- */
-@media (min-width: 787px) and (max-width: 1024px) {
-    .ux,
-    .projma,
-    .digital-mark,
-    .virtual,
-    .graphics,
-    .advanced {
-        flex-basis: 100%;
-    }
-}
 
 /* ---- Large phones / small tablets (431-786px): let the panel use the width ---- */
 @media (min-width: 431px) and (max-width: 786px) {

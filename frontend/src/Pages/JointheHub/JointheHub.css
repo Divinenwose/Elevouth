@@ -1576,7 +1576,7 @@
 }
 
 /* ---- Tablets & phones (<= 1199px) ---- */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 768px) {
     .jth-hero {
         height: auto;
         padding: 40px 24px 50px;

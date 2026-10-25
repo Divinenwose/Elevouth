@@ -312,7 +312,7 @@
    ========================================================================== */
 
 /* ---- Tablet & small laptops ---- */
-@media (max-width: 1199px) {
+@media (max-width: 768px) {
     .academy-hero {
         height: auto;
         padding: 130px 24px 70px;
