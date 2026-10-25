@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Mobile: every call-to-action button spans the full width of its container
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* rows of buttons become a stack */
+  .hero-buttons,
+  .right-content-buttons,
+  .partner-links,
+  .beyond-links,
+  .stress-btn,
+  .level-btn {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .hero-btn,
+  .pause-btn,
+  .hire,
+  .partner,
+  .story-btn,
+  .hub,
+  .career-btn,
+  .path-btn,
+  .reserve,
+  .sponsor,
+  .become-cta,
+  .partner-cta,
+  .beyond-tools,
+  .beyond-hub,
+  .jth-hub,
+  .way-join-the-hub,
+  .subscribe,
+  .stress-btn-join,
+  .stress-btn-explore,
+  .course,
+  .extech,
+  .extech1,
+  .tech-hero-btn,
+  .nxt,
+  .level-btn a,
+  .gets-write-up-container-links a,
+  .gets-write-up-container-responsive a,
+  .contact-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  /* Buttons that sit inside padded cards */
+  .watch,
+  .listen {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 32px) !important;
+    box-sizing: border-box;
+    margin-inline: auto !important;
+    text-align: center;
+  }
+
+  /* two buttons stacked in a plain block container */
+  .global-btn .sponsor {
+    margin-top: 12px !important;
+  }
+}
