@@ -67,6 +67,11 @@
     text-align: center;
   }
 
+  /* the desktop-only copy of this button stays hidden on phones */
+  .career-btn-wrapper .career-btn {
+    display: none !important;
+  }
+
   /* two buttons stacked in a plain block container */
   .global-btn .sponsor {
     margin-top: 12px !important;
