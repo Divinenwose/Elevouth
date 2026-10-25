@@ -581,3 +581,46 @@
         margin: 14px 0 0;
     }
 }
+
+
+/* ---- About images: span from the logo's edge to the menu button's edge ---- */
+@media (max-width: 768px) {
+    .about-flex {
+        padding-left: 18px;
+        padding-right: 20px;
+    }
+
+    .about-flex-left,
+    .flex-profile-image {
+        width: 100%;
+    }
+
+    .about-flex-left img,
+    .flex-profile-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-profile {
+        padding-left: 18px;
+        padding-right: 20px;
+    }
+}
+
+
+/* Crop the transparent artwork margins so the photos themselves fill the width */
+@media (max-width: 768px) {
+    .about-flex-left img {
+        object-view-box: inset(12.6% 12.7% 13.7% 21.5%);
+        border-radius: 12px;
+        filter: none;
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
+    }
+
+    .flex-profile-image img {
+        object-view-box: inset(0 17.2% 0 0);
+        border-radius: 12px;
+    }
+}
