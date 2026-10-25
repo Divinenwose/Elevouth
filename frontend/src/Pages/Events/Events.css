@@ -968,7 +968,7 @@
 }
 
 
-@media screen and (width: 360px) {
+@media screen and (max-width: 367px) {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -1551,7 +1551,7 @@
 
 }
 
-@media screen and (width: 375px) {
+@media screen and (min-width: 368px) and (max-width: 382px) {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -2136,7 +2136,7 @@
 
 }
 
-@media screen and (width: 390px) {
+@media screen and (min-width: 383px) and (max-width: 400px) {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -2715,7 +2715,7 @@
 
 }
 
-@media screen and (width: 412px)  {
+@media screen and (min-width: 401px) and (max-width: 413px)  {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -3265,7 +3265,7 @@
 
 }
 
-@media screen and (width: 414px)  {
+@media screen and (min-width: 414px) and (max-width: 421px)  {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -3813,7 +3813,7 @@
     }
 }
 
-@media screen and (width: 430px)  {
+@media screen and (min-width: 422px) and (max-width: 767px)  {
     .evnt-top{
         height: 1347px;
         padding-top: 150px;
@@ -4328,7 +4328,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .speaker-cards-wrapper {
     width: 100%; 
     overflow: hidden;
@@ -4380,3 +4380,125 @@
   }
 }
 
+
+
+/* ==========================================================================
+   Responsive layer
+   ========================================================================== */
+
+/* The logo marquee is intentionally wider than the screen. Clip it at the
+   (full-width) section so it can't widen the document. Looks identical. */
+.sponsors {
+  overflow-x: clip;
+}
+
+/* ---- Large phones / small tablets (431-767px): let the pinned elements of
+   the phone design grow with the screen, up to a comfortable reading width ---- */
+@media screen and (min-width: 431px) and (max-width: 767px) {
+  .top-write-up h2 {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .event-hero-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .event-about-content-left p,
+  .event-about-content-right,
+  .voices-writeup h4,
+  .partners-left h2,
+  .partners-left p,
+  .past-events-left-write-up p,
+  .past-events-right-write-up p {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .reserve-btn-container .reserve {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+
+/* ---- Tablets & small laptops (768-1199px): desktop look, fluid layout ---- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .evnt-top { height: auto; padding: 150px 32px 110px; }
+  .top-content { flex-wrap: wrap; row-gap: 10px; }
+  .top-content p { font-size: 16px; }
+  .events-container .dots { margin-inline: 8px; width: 12px; height: 12px; }
+  .top-write-up h2 { font-size: clamp(44px, 7vw, 64px); line-height: 1.12; }
+  .sponsor { margin-left: 24px; }
+  .event-hero-container { margin-top: 70px; }
+  .event-hero-content img { border-radius: 8px; }
+  .countdown-overlay { bottom: -60px; gap: 14px; flex-wrap: nowrap; }
+  .countdown-item { min-width: 100px; padding: 12px 14px; }
+  .count-value { font-size: 36px; }
+  .timer-dots img { height: 36px; width: auto; display: block; }
+
+  .event-about { flex-direction: column; align-items: stretch; margin-top: 120px; }
+  .event-about-content-left { border-left-color: transparent; border-bottom-color: transparent; padding: 24px 0; }
+  .event-about-content-left p { width: auto; }
+  .event-about-content-right { margin-bottom: 0; padding: 20px; }
+  .evnt-flex-container { align-items: flex-start; flex-wrap: wrap; gap: 20px 28px; justify-content: space-between; }
+  .reserve-btn-container { margin-top: 60px; }
+
+  .sponsors { padding-right: 40px; }
+
+  .voices { height: auto; padding: 60px 32px 70px; }
+  .voices-writeup { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .events-carousel { margin-top: 50px; }
+  .arrow-btn-wrapper, .carousel-dots-desktop-only { display: none; }
+  .carousel-dots-wrapper-mobile { display: flex; align-items: center; justify-content: center; margin-top: 15px; gap: 8px; }
+  .carousel-dots-wrapper-mobile .carousel-dots { display: flex; }
+  .carousel-dots-wrapper-mobile .arrow-btn { margin: 0; cursor: pointer; background: #FACB33; border: none; padding: 4px; }
+  .speaker-cards { width: 100%; gap: 16px; }
+  .speaker-card { flex: 1 1 0; min-width: 0; width: auto; height: auto; padding: 24px; }
+  .speaker-image { width: 100%; height: auto; margin: 22px 0 0; aspect-ratio: 1 / 1; }
+  .speaker-image img { width: 100%; height: 100%; object-fit: cover; }
+  .speaker-role, .speaker-role.panel, .speaker-role.featured-talk, .speaker-role.speaker { margin-left: auto; width: fit-content; height: auto; padding: 8px 12px; }
+  .speaker-name { font-size: 28px; line-height: 38px; }
+  .speaker-title { font-size: 18px; line-height: 24px; }
+
+  .partners { height: auto; padding: 60px 32px; }
+  .partners-content { flex-direction: column; align-items: center; gap: 40px; }
+  .partners-left { margin-top: 0; }
+  .partners-left h2 { font-size: clamp(36px, 5vw, 48px); line-height: 1.1; }
+  .partners-left p { width: auto; max-width: 635px; }
+  .partners-right img { width: min(600px, 100%); height: auto; }
+
+  .past-events { height: auto; padding: 60px 32px 70px; }
+  .past-write-up { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .past-write-up h2 { white-space: normal; line-height: 1.1; }
+  .past-events-flex { flex-direction: column; align-items: center; margin-top: 40px; }
+  .past-events-left, .past-events-right { width: 100%; max-width: 620px; height: auto; padding-bottom: 30px; }
+  .past-events-flex img { width: 100%; height: auto; }
+  .past-events-left-write-up p, .past-events-right-write-up p { width: auto; max-width: 440px; padding-inline: 16px; }
+  .past-events-left-write-up .watch, .past-events-right-write-up .listen { text-align: center; }
+
+  .beyond { height: auto; padding: 70px 32px; }
+  .beyond-content h2 { font-size: clamp(34px, 5vw, 48px); line-height: 1.1; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .partners-content { flex-direction: row; align-items: center; justify-content: space-between; gap: 32px; }
+  .partners-right img { width: 440px; }
+  .past-events-flex { flex-direction: row; align-items: stretch; }
+  .past-events-left, .past-events-right { width: calc(50% - 10px); max-width: none; }
+}
+
+
+@media (max-width: 480px) {
+  .event-about-content-left { max-width: 100%; }
+  .event-about-content-left p { width: 100%; }
+  .voices-writeup h4, .partners-left h2, .partners-left p { max-width: 100%; }
+  .carousel-dots-wrapper-mobile { max-width: 100%; flex-wrap: wrap; }
+}

@@ -1504,3 +1504,263 @@
          margin-top: 20px;
     }
 }
+
+/* ==========================================================================
+   Responsive layer
+   Desktop >= 1400px is untouched. These rules come last on purpose so they
+   supersede the older per-device blocks above with fluid sizing.
+   ========================================================================== */
+
+/* ---- Laptops (1200-1399px): shrink fixed-width blocks ---- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .jth-hero-container {
+        gap: 30px;
+    }
+
+    .jth-content {
+        flex: 0 0 auto;
+    }
+
+    .jth-image {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .jth-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 797 / 653;
+    }
+
+    .hub-welcome {
+        height: auto;
+        min-height: 858px;
+    }
+
+    .hub-cards-container {
+        padding-right: 6px;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hub-cards-container h4 {
+        white-space: normal;
+        font-size: clamp(22px, 2.1vw, 27px);
+        line-height: 1.2;
+    }
+
+    .way {
+        height: auto;
+        min-height: 1168px;
+    }
+
+    .way-flex-left,
+    .way-flex-right {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+    }
+
+    .way-content-btn a {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-inline: 16px;
+        text-align: center;
+    }
+}
+
+/* ---- Tablets & phones (<= 1199px) ---- */
+@media screen and (max-width: 1199px) {
+    .jth-hero {
+        height: auto;
+        padding: 40px 24px 50px;
+    }
+
+    .jth-hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jth-image img {
+        display: block;
+        width: min(560px, 100%);
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .jth-content {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    .jth-content h2 {
+        width: auto;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 24px;
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 1.25;
+    }
+
+    .jth-content p {
+        padding: 0;
+        margin-top: 14px;
+        font-size: clamp(15px, 2vw, 18px);
+        line-height: 1.6;
+    }
+
+    .hub-wrapper {
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .hub-wrapper .jth-hub {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        max-height: none;
+        padding: 12px 24px;
+        text-align: center;
+    }
+
+    .hub-welcome {
+        height: auto;
+        padding: 40px 24px 60px;
+    }
+
+    .hub-welcome-content h4 {
+        width: auto;
+        max-width: 100%;
+        margin-top: 0;
+        font-size: clamp(26px, 4.8vw, 44px);
+        line-height: 1.3;
+    }
+
+    .hub-welcome-content span {
+        font-size: clamp(26px, 4.8vw, 44px);
+    }
+
+    .hub-welcome-content p {
+        width: auto;
+        max-width: 625px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hub-cards-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hub-cards-one,
+    .hub-cards-two,
+    .hub-cards-three,
+    .hub-cards-four,
+    .hub-cards-five,
+    .hub-cards-six {
+        grid-column: auto;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 160px;
+        padding: 20px;
+    }
+
+    .hub-cards-container h4 {
+        white-space: normal;
+        font-size: clamp(20px, 3vw, 27px);
+        line-height: 1.25;
+    }
+
+    .hub-cards-container .hub-paragraph {
+        margin-top: 14px;
+        line-height: 1.5;
+    }
+
+    .way {
+        height: auto;
+        padding: 40px 24px 70px;
+    }
+
+    .way-flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+    }
+
+    .way-flex-left,
+    .way-flex-right {
+        width: min(630px, 100%);
+        height: auto;
+        padding-bottom: 32px;
+    }
+
+    .way-content-btn a {
+        display: block;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding-inline: 16px;
+        text-align: center;
+    }
+
+    .sign {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .stress {
+        height: auto;
+        padding: 40px 24px 50px;
+    }
+
+    .stress-content {
+        margin-top: 20px;
+    }
+
+    .stress-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .stress-btn-join,
+    .stress-btn-explore {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/* ---- Phones: single column ---- */
+@media screen and (max-width: 767px) {
+    .hub-cards-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .way-flex-left,
+    .way-flex-right {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .stress-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

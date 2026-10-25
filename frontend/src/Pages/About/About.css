@@ -281,3 +281,251 @@
     text-align: center;
     color:#111511 ;
 }
+
+/* ==========================================================================
+   Responsive layer (desktop rules above are untouched; these only apply
+   below 1200px)
+   ========================================================================== */
+
+/* ---- Tablet & small laptops ---- */
+@media (max-width: 1199px) {
+    .about-content {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 110px 24px 0;
+    }
+
+    .about-flex-left img {
+        width: min(560px, 100%);
+        height: auto;
+    }
+
+    .about-flex-right h2 {
+        font-size: clamp(38px, 6vw, 60px);
+        line-height: 1.2;
+    }
+
+    .about-flex-right p {
+        width: auto;
+        max-width: 690px;
+        margin: 16px auto 0;
+    }
+
+    .about-profile {
+        height: auto;
+        padding: 50px 24px;
+    }
+
+    .about-profile-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+
+    .flex-profile-writeup {
+        margin-top: 0;
+    }
+
+    .flex-profile-writeup p {
+        width: auto;
+        max-width: 700px;
+    }
+
+    .flex-profile-image img {
+        width: min(520px, 100%);
+        height: auto;
+    }
+
+    .mission {
+        height: auto;
+        padding: 50px 24px;
+    }
+
+    .mission-cards {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .our-mission,
+    .our-vision {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 32px;
+    }
+
+    .values {
+        height: auto;
+        padding: 40px 24px 80px;
+    }
+
+    .core-values {
+        margin-top: 30px;
+    }
+
+    .core-values h2 {
+        font-size: clamp(40px, 7vw, 64px);
+    }
+
+    .values-card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 364px));
+        justify-content: center;
+        gap: 56px 32px;
+        margin-top: 70px;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+        width: 100%;
+    }
+
+    .impact {
+        height: auto;
+        padding: 50px 24px 70px;
+    }
+
+    .impact-container h2 {
+        font-size: clamp(40px, 7vw, 68px);
+        line-height: 1.1;
+    }
+
+    .impact-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 50px;
+    }
+
+    .im-card-one,
+    .im-card-two,
+    .im-card-three,
+    .im-card-four {
+        width: calc(50% - 8px);
+        max-width: 357px;
+        height: auto;
+        min-height: 200px;
+        padding: 28px;
+    }
+
+    .im-card-one h2,
+    .im-card-two h2,
+    .im-card-three h2,
+    .im-card-four h2 {
+        font-size: clamp(44px, 6vw, 64px);
+        margin-top: 10px;
+    }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 767px) {
+    .about-flex {
+        padding-top: 90px;
+    }
+
+    .about-flex-right h2 {
+        font-size: clamp(30px, 8.5vw, 40px);
+    }
+
+    .about-flex-right p,
+    .flex-profile-writeup p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-profile,
+    .mission,
+    .impact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .our-mission,
+    .our-vision {
+        padding: 24px;
+    }
+
+    .mission-cards h2 {
+        font-size: 36px;
+    }
+
+    .mission-cards p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .values {
+        padding: 30px 20px 60px;
+    }
+
+    .values-card {
+        grid-template-columns: minmax(0, 340px);
+        gap: 48px;
+        margin-top: 50px;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .card-one h2,
+    .card-two h2,
+    .card-three h2,
+    .card-four h2 {
+        font-size: 24px;
+        line-height: 30px;
+        white-space: normal;
+    }
+
+    .card-one p,
+    .card-two p,
+    .card-three p,
+    .card-four p {
+        line-height: 1.4;
+    }
+
+    .impact-container h2 {
+        font-size: 40px;
+    }
+
+    .impact-cards {
+        gap: 12px;
+        margin-top: 36px;
+    }
+
+    .im-card-one,
+    .im-card-two,
+    .im-card-three,
+    .im-card-four {
+        width: calc(50% - 6px);
+        min-height: 170px;
+        padding: 20px 12px;
+    }
+
+    .im-card-one h2,
+    .im-card-two h2,
+    .im-card-three h2,
+    .im-card-four h2 {
+        font-size: 40px;
+    }
+
+    .im-card-one p,
+    .im-card-two p,
+    .im-card-three,
+    .im-card-four p {
+        font-size: 16px;
+    }
+}

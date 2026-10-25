@@ -294,3 +294,9 @@
   }
 }
 
+
+
+@media (max-width: 480px) {
+  .zigzag { overflow: hidden; max-width: 100vw; }
+  .zigzag img { max-width: 100vw; }
+}
