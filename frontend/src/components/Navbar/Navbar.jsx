@@ -3,8 +3,6 @@ import './Navbar.css';
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/elevouthlogo.png";
 import Arrowdown from "../../assets/arrow-down.png";
-import MenuIcon from "../../assets/menu.png";
-import CloseIcon from "../../assets/close-circle.png";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
@@ -38,9 +36,17 @@ const Navbar = () => {
                 <img src={logo} alt="Elevouth Logo" className="logo" />
             </div>
 
-            <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-                <img src={menuOpen ? CloseIcon : MenuIcon} alt="Menu Toggle Icon" />
-            </div>
+            <button
+                type="button"
+                className={`menu-icon ${menuOpen ? "is-open" : ""}`}
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={menuOpen}
+            >
+                <span className="menu-bar" />
+                <span className="menu-bar" />
+                <span className="menu-bar" />
+            </button>
 
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li className="nav-item">
