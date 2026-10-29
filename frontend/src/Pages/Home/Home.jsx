@@ -18,7 +18,7 @@ import "./home-mobile.css";
 
 const HomePage = () => {
   return(
-    <div>
+    <div className="home-page">
       <Hero />
       <Pause />
       <Cards />
