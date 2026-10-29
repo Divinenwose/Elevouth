@@ -2746,3 +2746,24 @@
     line-height: 1.4 !important;
   }
 }
+
+
+/* Slide 1: crop the image's empty bottom margin so it sits on the section's edge */
+@media (max-width: 768px) {
+  .tech-section-container:has(.tech-hero-left-one) {
+    padding-bottom: 0 !important;
+  }
+
+  .tech-hero-left-one {
+    padding-bottom: 0 !important;
+  }
+
+  .tech-hero-right img {
+    object-view-box: inset(0 0 14.9% 0);
+    margin-bottom: 0 !important;
+  }
+
+  .tech-hero-right:has(> img) {
+    line-height: 0;
+  }
+}

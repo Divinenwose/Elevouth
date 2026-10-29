@@ -27,7 +27,7 @@ const About = () => {
                         <img src={abthero} alt="" />
                     </div>
                     <div className="about-flex-right">
-                        <h2>Beyond Training and Talent placements</h2>
+                        <h2>Beyond Training and <br />Talent placements</h2>
                         <p>Since 2024, Elevouth has helped hundreds of young professionals across Africa and beyond kickstart their careers, while partnering with startups and companies to build diverse,
                             remote-ready talent pipelines for the future of work.
                         </p>
